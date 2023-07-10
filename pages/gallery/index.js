@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import NextFutureImage from "next/future/image";
+import NextImage from "next/image";
 import Link from "next/link";
 import cloudinary from "@/utils/cloudinary";
 import getBase64ImageUrl from "@/utils/generateBlurPlaceholder";
@@ -73,7 +73,7 @@ const FilterTag = ({ filter, onClick, children }) => {
   );
 };
 
-const MotionImage = motion(NextFutureImage);
+const MotionImage = motion(NextImage);
 
 const Gallery = ({ images }) => {
   const router = useRouter();
@@ -140,7 +140,7 @@ const Gallery = ({ images }) => {
                     : "h-[250px]"
                 )}
               >
-                <NextFutureImage
+                <NextImage
                   alt=""
                   src={`https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/image/upload/c_scale,w_1440/${selectedImage.public_id}.${selectedImage.format}`}
                   placeholder="blur"

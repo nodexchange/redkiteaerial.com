@@ -14,7 +14,6 @@ import {
   DialogPortal,
 } from "@radix-ui/react-dialog";
 import NextImage from "next/image";
-import NextFutureImage from "next/future/image";
 import React from "react";
 import { motion } from "framer-motion";
 import { cx } from "class-variance-authority";
@@ -141,7 +140,7 @@ const PhotoGrid = () => {
                         duration: 0.4,
                       }}
                     >
-                      <NextFutureImage
+                      <NextImage
                         src={i.src}
                         alt={i.alt}
                         className="w-auto h-full rounded shadow-md"

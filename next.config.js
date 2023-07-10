@@ -8,7 +8,6 @@ module.exports = {
       "www.dpreview.com",
     ],
   },
-  experimental: { images: { allowFutureImage: true } },
   async redirects() {
     return [
       {

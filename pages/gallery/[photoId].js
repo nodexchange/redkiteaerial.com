@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import getResults from "@/utils/cachedImages";
 import getBase64ImageUrl from "@/utils/generateBlurPlaceholder";
 import cloudinary from "@/utils/cloudinary";
-import NextFutureImage from "next/future/image";
+import NextImage from "next/image";
 import Link from "next/link";
 
 const Gallery = ({ selectedPhoto }) => {
@@ -21,7 +21,7 @@ const Gallery = ({ selectedPhoto }) => {
               Back to Gallery
             </a>
           </Link>
-          <NextFutureImage
+          <NextImage
             src={currentPhotoURL}
             width={selectedPhoto.width}
             height={selectedPhoto.height}
