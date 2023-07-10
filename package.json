@@ -1,5 +1,7 @@
 {
-  "name": "tm_v5",
+  "name": "rka",
+  "version": "0.0.1",
+  "author": "Marcin Wojtala - based on Mitul",
   "private": true,
   "scripts": {
     "dev": "next dev",

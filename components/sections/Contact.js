@@ -6,37 +6,6 @@ import { ArrowRight } from "phosphor-react";
 import { Input, TextArea } from "@/components/Field";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/Sheet";
 
-const NotSure = () => {
-  return (
-    <div className="mt-auto mb-4">
-      {/* <div className="text-stone">Other places:</div> */}
-      <div className="flex gap-x-2">
-        <a
-          href=""
-          target="_blank"
-          className="border bg-eggshell rounded px-2 py-1.5 shadow-sm transition betterhover:hover:bg-yolk/20 betterhover:hover:border-yolk betterhover:hover:shadow"
-        >
-          Twitter
-        </a>
-        <a
-          href=""
-          target="_blank"
-          className="border bg-eggshell rounded px-2 py-1.5 shadow-sm transition betterhover:hover:bg-yolk/20 betterhover:hover:border-yolk betterhover:hover:shadow"
-        >
-          Instagram
-        </a>
-        <a
-          href=""
-          target="_blank"
-          className="border bg-eggshell rounded px-2 py-1.5 shadow-sm transition betterhover:hover:bg-yolk/20 betterhover:hover:border-yolk betterhover:hover:shadow"
-        >
-          Mail
-        </a>
-      </div>
-    </div>
-  );
-}
-
 const Form = () => {
   const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM);
   const [inputs, setInputs] = useState({
@@ -115,8 +84,7 @@ const ContactDialog = ({ open, onOpenChange, children, ...props }) => {
 };
 
 const Contact = () => {
-  
-  const [value, copy] = useCopyToClipboard("typicalmitul@gmail.com");
+  const [value, copy] = useCopyToClipboard("redkiteaerial@gmail.com");
 
   return (
     <>
@@ -139,7 +107,7 @@ const Contact = () => {
               className="sm:py-1.5 text-lg normal-case md:text-2xl"
               onClick={copy}
             >
-              typicalmitul<span className="hidden">null</span>@gmail.com
+              redkiteaerial<span className="hidden">null</span>@gmail.com
             </Button>
           </div>
           <div className="flex flex-col justify-end col-span-1 p-6 -mt-10 md:pl-4 md:border-l">
