@@ -18,22 +18,24 @@ const About = () => {
         <div className="flex flex-col justify-end">
           <div className="flex items-center mb-6 leading-none uppercase gap-x-2 md:mb-auto">
             <span className="w-2.5 h-2.5 rounded-full bg-yolk border border-dark -mt-0.5" />
-            <h2 className="text-dark">About</h2>
+            <h2 className="text-yolk">About</h2>
           </div>
 
           <p className="mb-4 text-2xl xl:text-5xl">
-            Typical
-            <Tooltip text="No, not actually my first name">
-              <span className="font-light text-stone">*</span>
+            
+            Elevate Your Listings with{' '}
+            <Tooltip text="Buckinghamshire Based Drone experts">
+              <span className="font-light text-stone">{' '}Red Kite Aerial</span>
             </Tooltip>
-            Mitul is a photographer based in Toronto, Canada dedicated to
-            defining <b className="font-mtl-bold">thoughtful</b> and{" "}
-            <b className="font-mtl-bold">memorable experiences</b> through every
-            capture.
+            <br/> We are imaging Experts transforming 
+            <b className="font-mtl-bold">{' '}Commercial Real Estate, Airbnb, and Office listing</b> 
+            {' '} with {' '}
+            <b className="font-mtl-bold">Breathtaking</b> Photography and Video Services through every
+            capture. With transparent pricing tailored to your needs, we are the perfect partner for your next project.
           </p>
-          <NextLink href="/about" passHref>
+          <NextLink href="/services" passHref legacyBehavior>
             <Button asAnchor>
-              <span>Get to know me</span>
+              <span>Our Services</span>
               <ArrowRight />
             </Button>
           </NextLink>

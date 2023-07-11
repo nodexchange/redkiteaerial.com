@@ -1,4 +1,4 @@
-import NextImage from "next/image";
+import NextImage from "next/legacy/image";
 import { motion } from "framer-motion";
 import { useIsSmall } from "@/hooks/useBreakpoint";
 import nyc_lookdown from "../../public/images/new-york-city-lookdown.jpg";
@@ -16,12 +16,12 @@ const Hero = () => {
       <div className="grid h-full isolate shadow-md shadow-yolk rounded-[8px]">
         <div className="z-10 flex items-center justify-center overlay">
           <motion.h1
-            className="-mt-4 text-3xl text-center text-white md:text-6xl font-mtl-bold"
+            className="-mt-4 text-2xl text-center text-white md:text-6xl font-mtl-bold"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            Capturing the world <br /> and chasing life
+            Elevate your Real Estate & Airbnb listings <br/> with Stunning Photography & Video
           </motion.h1>
         </div>
         <motion.div

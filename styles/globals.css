@@ -4,8 +4,8 @@
 
 :root {
   --gutter: 16px;
-  --marquee-height: theme("spacing.7");
-  --marquee-height-mobile: theme("spacing.5");
+  --marquee-height: theme("spacing.14");
+  --marquee-height-mobile: theme("spacing.10");
   
 }
 
@@ -286,7 +286,7 @@ body {
 }
 
 .marquee {
-  @apply py-1.5 overflow-x-hidden rounded bg-yolk relative w-full border border-dark;
+  @apply overflow-x-hidden rounded bg-yolk relative w-full border border-dark;
   --offset: calc(2 * theme("fontSize.base"));
   --move-initial: calc(-25% + var(--offset));
   --move-final: calc(-50% + var(--offset));

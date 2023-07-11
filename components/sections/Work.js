@@ -1,5 +1,5 @@
 import { Text } from "@components";
-import NextImage from "next/image";
+import NextImage from "next/legacy/image";
 import delta from "../../public/images/delta.jpg";
 import uber_team from "../../public/images/uber_team.jpg";
 import shopify from "../../public/images/shopify.jpg";
@@ -18,14 +18,10 @@ const ColumnOne = () => {
       <div className="flex flex-col justify-between h-full">
         <div>
           <Text className="text-2xl xl:text-5xl">
-            At the centre of everything I do rests the power of storytelling.
-            Through the years, I have been lucky to work alongside countless
-            brands and companies to craft an impactful story through my photos.
+           {'Whether you\'re in the real estate industry, managing Airbnb listings, or need aerial visuals for office buildings or any other applications, we are here to provide personalized solutions that meet your specific requirements.'}
           </Text>
           <p className="w-full mt-2 text-md xl:text-2xl sm:w-2/3 text-dark/50">
-            Photography revolves around my trips and adventures. From brand
-            shoots to licensing, I would be honoured to provide creative pieces
-            that work for you.
+          We look forward to hearing from you and working together to create stunning aerial photography and videos that will exceed your expectations.
           </p>
           <div className="flex mt-4 gap-x-1">
             <Tag>Photography</Tag>

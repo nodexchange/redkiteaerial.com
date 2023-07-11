@@ -47,7 +47,7 @@ const input = cva(
   [
     "input",
     "border",
-    "text-dark",
+    "text-white",
     "rounded",
     "outline-none",
     "transition-all",

@@ -1,19 +1,15 @@
 import '../styles/fonts.css'
 import '../styles/globals.css'
 
-import React, { useEffect } from "react";
+import React from "react";
 import { TooltipProvider } from "@radix-ui/react-tooltip";
+import { Analytics } from '@vercel/analytics/react';
 import { SheetProvider } from "@/components/Sheet"
 import { DefaultSeo } from "next-seo";
 import Layout from "@/components/Layout"
 
-import splitbee from "@splitbee/web";
-
 const MyApp = ({ Component, pageProps }) => {
 
-  useEffect(() => {
-    splitbee.init();
-  }, [])
 
   return (
     <TooltipProvider>
@@ -21,35 +17,36 @@ const MyApp = ({ Component, pageProps }) => {
         <Layout>
           <DefaultSeo
             title={undefined}
-            titleTemplate="%s | Typical Mitul"
-            defaultTitle="Typical Mitul | Toronto Photographer for Hire"
-            description="Photographer based in Toronto, Canada specializing in cityscapes, architecture and portraits."
-            canonical="https://typicalmitul.com"
+            titleTemplate="%s | Red Kite Aerial"
+            defaultTitle="Red Kite Aerial | Drone Photography and Video Service"
+            description="Aerial Services based in Radnage, Buckinghamshire, UK specializing in real estate, airbnb listing and commercial property footage capture."
+            canonical="https://redkiteaerial.com"
             twitter={{
-              handle: "@typicalmitul",
-              site: "@typicalmitul",
+              handle: "@redkiteaerial",
+              site: "@redkiteaerial",
               cardType: "summary_large_image",
             }}
             openGraph={{
               type: "website",
               locale: "en_CA",
-              url: "https://typicalmitul.com",
-              title: "Typical Mitul | Toronto Photographer for Hire",
-              description: "Photographer based in Toronto, Canada specializing in cityscapes, architecture and portraits.",
+              url: "https://redkiteaerial.com",
+              title: "Red Kite Aerial | Drone Photography and Video Service",
+              description: "Aerial Services based in Radnage, Buckinghamshire, UK specializing in real estate, airbnb listing and commercial property footage capture.",
               images: [
                 {
-                  url: "https://typicalmitul.com/images/og.png",
+                  url: "https://redkiteaerial.com/images/og.png",
                   width: 1200,
                   height: 630,
-                  alt: "Typical Mitul | Toronto Photographer for Hire",
+                  alt: "Red Kite Aerial | Drone Photography and Video Service",
                   type: "image/png",
                 }
               ]
             }}
-          />
+          /> 
           <Component {...pageProps} />
+          <Analytics />
         </Layout>
-      </SheetProvider>
+      </SheetProvider> 
     </TooltipProvider>
   );
 }

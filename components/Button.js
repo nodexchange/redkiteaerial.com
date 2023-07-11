@@ -6,7 +6,7 @@ const button = cva(["button"], {
     intent: {
       primary: [
         "bg-yolk",
-        "text-dark",
+        "text-white",
         "border-dark",
         "betterhover:hover:bg-yolk/75",
         "font-medium",

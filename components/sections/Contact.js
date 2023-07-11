@@ -46,7 +46,7 @@ const Form = () => {
         />
         <TextArea
           label="Message"
-          placeholder="Leave me your thoughts..."
+          placeholder="Let's chat..."
           name="message"
           id="message"
           // error={state.errors}
@@ -96,11 +96,11 @@ const Contact = () => {
               <h2>Contact</h2>
             </div>
             <Text>
-              {`Let's talk! I'd love to hear from you and work together. I'm open to all inquires. Shoot over any questions you may have and I'll get back to you as soon as I can.`}
+              {`We would love to hear from you! If you have any inquiries or would like to discuss your aerial photography and video needs, please don't hesitate to reach out to us. Our team at Red Kite Aerial is ready to assist you in capturing stunning imagery that will elevate your projects.`}
             </Text>
           </div>
           <div className="pl-6 md:pl-0 lg:place-self-center">
-            <div className="text-sm uppercase text-dark/50">
+            <div className="text-sm uppercase text-white/50">
               {value ? "Copied!" : "Click to copy ⬎"}
             </div>
             <Button

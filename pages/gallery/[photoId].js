@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import getResults from "@/utils/cachedImages";
 import getBase64ImageUrl from "@/utils/generateBlurPlaceholder";
 import cloudinary from "@/utils/cloudinary";
-import NextImage from "next/image";
+import NextImage from "next/legacy/image";
 import Link from "next/link";
 
 const Gallery = ({ selectedPhoto }) => {
@@ -16,7 +16,7 @@ const Gallery = ({ selectedPhoto }) => {
     <main className="relative">
       <div className="px-4 py-4">
         <div className="relative">
-          <Link href="/gallery">
+          <Link href="/gallery" passHref legacyBehavior>
             <a className="rounded px-2 py-2 inline-block absolute top-4 left-4 bg-yolk text-black text-sm border-black border leading-none transition betterhover:hover:bg-yolk/75">
               Back to Gallery
             </a>
@@ -66,7 +66,7 @@ export const getStaticProps = async (context) => {
 
 export async function getStaticPaths() {
   const results = await cloudinary.v2.search
-    .expression(`folder:typicalmitul/*`)
+    .expression(`folder:redkiteaerial/*`)
     .sort_by("public_id", "desc")
     .max_results(400)
     .execute();

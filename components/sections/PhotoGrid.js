@@ -13,7 +13,7 @@ import {
   DialogOverlay,
   DialogPortal,
 } from "@radix-ui/react-dialog";
-import NextImage from "next/image";
+import NextImage from "next/legacy/image";
 import React from "react";
 import { motion } from "framer-motion";
 import { cx } from "class-variance-authority";

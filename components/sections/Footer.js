@@ -4,19 +4,19 @@ const Footer = () => {
 
   const footerLinks = [
     {
-      href: "https://www.twitter.com/typicalmitul",
+      href: "https://www.twitter.com/redkiteaerial",
       text: "Twitter",
     },
     {
-      href: "https://www.instagram.com/typicalmitul",
+      href: "https://www.instagram.com/redkiteaerial",
       text: "Instagram",
     },
     // {
-    //   href: "https://500px.com/typicalmitul",
+    //   href: "https://500px.com/redkiteaerial",
     //   text: "500px",
     // },
     {
-      href: "mailto:typicalmitul@gmail.com",
+      href: "mailto:redkiteaerial@gmail.com",
       text: "Mail",
     },
   ]
@@ -39,23 +39,7 @@ const Footer = () => {
         ))}
       </ul>
       <div className="mt-4 text-xs max-w-prose text-stone-blue">
-        This website was designed and built by myself, lots of water and Playboi
-        Carti on repeat. <br /> If you have any feedback, I{"'"}d appreciate it!
-        You can also visit the{" "}
-        <a
-          href="https://github.com/mitul-s/typicalmitul.com"
-          onClick={() =>
-            splitbee.track("Social Click", {
-              location: "Github",
-            })
-          }
-          target="_blank"
-          rel="noreferrer"
-          className="underline underline-offset-2"
-        >
-          GitHub repo
-        </a>
-        .
+        Created by <a href="http://alyssacreative.co.uk/">AS Creative</a> - ©Red Kite Aerial - All Rights Reserved - 2023. <br/> Registered in England and Wales.
       </div>
     </footer>
   );

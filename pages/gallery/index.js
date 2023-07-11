@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import NextImage from "next/image";
+import NextImage from "next/legacy/image";
 import Link from "next/link";
 import cloudinary from "@/utils/cloudinary";
 import getBase64ImageUrl from "@/utils/generateBlurPlaceholder";
@@ -16,13 +16,12 @@ import {
 import Heading from "@/components/Heading";
 import { AnimatePresence, motion } from "framer-motion";
 import { cx } from "class-variance-authority";
-import splitbee from "@splitbee/web";
 
 const FILTERS = [
   {
     title: "All",
     type: "all",
-    filter: "typicalmitul",
+    filter: "redkiteaerial",
   },
   {
     title: "Concerts",
@@ -52,7 +51,7 @@ const FilterTag = ({ filter, onClick, children }) => {
 
   return (
     <div className="grid">
-      <Link href={`/gallery?type=${filter}`} as={`/gallery/${filter}`}>
+      <Link href={`/gallery?type=${filter}`} as={`/gallery/${filter}`} passHref legacyBehavior>
         <a
           className={cx(
             "border rounded px-2 py-0.5 border-dark text-sm content text-dark z-10"
@@ -80,7 +79,7 @@ const Gallery = ({ images }) => {
   const { photoId, type } = router.query;
   const [open, setOpen] = useState(false);
   const [shuffled, setShuffled] = useState(false);
-  const [filter, setFilter] = useState("typicalmitul");
+  const [filter, setFilter] = useState("redkiteaerial");
   const newImages = images.filter((image) => image.public_id.includes(filter));
   const [gridImages, setGridImages] = useState(images);
   const [selectedImage, setSelectedImage] = useState({
@@ -96,7 +95,7 @@ const Gallery = ({ images }) => {
     if (type && type !== "all") {
       setFilter(type);
     } else {
-      setFilter("typicalmitul");
+      setFilter("redkiteaerial");
     }
   }, [router.isReady]);
 
@@ -220,9 +219,6 @@ const Gallery = ({ images }) => {
                       height: height,
                     });
                     setOpen(true);
-                    splitbee.track("Open Photo", {
-                      title: selectedImage.public_id,
-                    });
                   }}
                   className="cursor-pointer block overflow-hidden transition-all duration-500 border rounded-lg shadow betterhover:hover:shadow-xl betterhover:hover:shadow-yolk/50 betterhover:hover:border-yolk border-stone"
                   alt=""
@@ -243,7 +239,7 @@ const Gallery = ({ images }) => {
 
 export async function getStaticProps() {
   const results = await cloudinary.v2.search
-    .expression(`folder:typicalmitul/*`)
+    .expression(`folder:redkiteaerial/*`)
     .sort_by("public_id", "desc")
     .max_results(400)
     .execute();
