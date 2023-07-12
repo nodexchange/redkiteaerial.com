@@ -1,5 +1,5 @@
 import { Button, Tooltip, Marquee, Image } from "@components";
-import { ArrowRight } from "phosphor-react";
+import { Package, ArrowRight } from "phosphor-react";
 import NextLink from "next/link";
 import idx_me from "../../public/images/man-standing-in-montreal-metro.jpg";
 
@@ -17,11 +17,12 @@ const About = () => {
         </div>
         <div className="flex flex-col justify-end">
           <div className="flex items-center mb-6 leading-none uppercase gap-x-2 md:mb-auto">
-            <span className="w-2.5 h-2.5 rounded-full bg-yolk border border-dark -mt-0.5" />
+            <Package />
+            {/* <span className="w-2.5 h-2.5 rounded-full bg-yolk border border-dark -mt-0.5" /> */}
             <h2 className="text-yolk">About</h2>
           </div>
-
-          <p className="mb-4 text-2xl xl:text-5xl">
+          <hr />
+          <p className="mb-4 text-2xl xl:text-5xl pt-4">
             
             Elevate Your Listings with{' '}
             <Tooltip text="Buckinghamshire Based Drone experts">

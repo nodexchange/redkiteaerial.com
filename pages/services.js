@@ -1,36 +1,9 @@
 import React from "react";
 import { SheetContext } from "@/components/Sheet";
-import { Text, Button, Image, Heading } from "@components";
-import { ArrowUp, ArrowUpRight } from "phosphor-react";
+import { Image } from "@components";
+import { FilmStrip } from "phosphor-react";
 import { ContactDialog } from "@/components/sections/Contact";
 import { NextSeo } from "next-seo";
-
-const clients = [
-  "Shopify",
-  "Uber",
-  "Google",
-  "Samsung",
-  "dbrand",
-  "Timbuk2",
-  "Amdocs",
-  "500px",
-  "Delta Hotels",
-];
-
-const notables = [
-  {
-    title: "500px",
-    href: "https://iso.500px.com/toronto-urban-photography-workshop/",
-  },
-  {
-    title: "Feature Shoot",
-    href: "https://iso.500px.com/4-viral-photos-can-teach-us-creating-marketable-images/",
-  },
-  {
-    title: "Metro News",
-    href: "https://drive.google.com/file/d/0B-wYLuK2QlRwb1FmOThmUmYwekU/view?resourcekey=0-qLFUahFzx44xsvJse_xK1A",
-  },
-];
 
 const AboutText = () => (
   <div className="flex rounded">
@@ -40,7 +13,7 @@ const AboutText = () => (
           Welcome to Red Kite Aerial
         </h2>
         <p className="text-2xl sm:text-4xl">
-          {`Premier drone and aerial photography and video services, specializing in capturing stunning imagery for the real estate and Airbnb listings.`}
+          {`Premier drone and aerial photography and video services, specialising in capturing stunning imagery for the real estate and Airbnb listings.`}
         </p>
       </div>
       <p className="text-lg sm:text-xl">
@@ -71,36 +44,6 @@ const AboutText = () => (
   </div>
 );
 
-const ClientHistory = ({ setOpen }) => (
-  <div className="mt-6">
-    <Heading>Client History</Heading>
-    <ul
-      className="grid gap-4 pt-2 md:text-3xl whitespace-nowrap"
-      style={{
-        gridTemplateColumns: "repeat(auto-fill, minmax(175px, 1fr))",
-      }}
-    >
-      {clients.map((client, index) => (
-        <li
-          key={index}
-          className="px-1.5 py-2.5 text-center border rounded border-stone"
-        >
-          {client}
-        </li>
-      ))}
-      <li>
-        <Button
-          fullWidth
-          className="text-lg normal-case h-max !bg-transparent !border-stone"
-          onClick={() => setOpen(true)}
-        >
-          + you next?
-        </Button>
-      </li>
-    </ul>
-  </div>
-);
-
 export default function Services() {
   const { open, setOpen } = React.useContext(SheetContext);
 
@@ -110,7 +53,7 @@ export default function Services() {
       <ContactDialog open={open} onOpenChange={setOpen} />
       <main className="relative pb-20">
         <div className="flex items-center px-6 py-6 md:px-4 gap-x-yeat">
-          <span className="w-6 h-6 border rounded-full bg-yolk border-dark shrink-0"></span>
+          <FilmStrip />
           <h1 className="text-5xl uppercase">Services</h1>
         </div>
         <div className="grid px-6 gap-x-12 gap-y-4 md:px-4 md:grid-cols-2">
@@ -122,30 +65,6 @@ export default function Services() {
           <section className="flex flex-col gap-y-4">
             <AboutText />
             <hr className="-mb-1" />
-            {/* <div className="md:col-start-2">
-              <Heading>Notable</Heading>
-              <div
-                className="grid gap-2 pt-2 whitespace-nowrap"
-                style={{
-                  gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))",
-                }}
-              >
-                {notables.map((notable, index) => (
-                  <Button
-                    key={index}
-                    href={notable.href}
-                    asAnchor
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="!bg-transparent normal-case !border-stone px-2 text-base py-1.5 "
-                  >
-                    {notable.title}
-                    <ArrowUpRight />
-                  </Button>
-                ))}
-              </div>
-              <ClientHistory setOpen={setOpen} />
-            </div>{" "} */}
           </section>
         </div>
       </main>

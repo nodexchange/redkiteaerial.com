@@ -1,5 +1,6 @@
 import { Text } from "@components";
 import NextImage from "next/legacy/image";
+import { FilmStrip } from "phosphor-react";
 import delta from "../../public/images/delta.jpg";
 import uber_team from "../../public/images/uber_team.jpg";
 import shopify from "../../public/images/shopify.jpg";
@@ -18,15 +19,16 @@ const ColumnOne = () => {
       <div className="flex flex-col justify-between h-full">
         <div>
           <Text className="text-2xl xl:text-5xl">
-           {'Whether you\'re in the real estate industry, managing Airbnb listings, or need aerial visuals for office buildings or any other applications, we are here to provide personalized solutions that meet your specific requirements.'}
+           {'Whether you\'re in the real estate industry, managing Airbnb listings, or need aerial visuals for office buildings or any other applications, we are here to provide personalised solutions that meet your specific requirements.'}
           </Text>
           <p className="w-full mt-2 text-md xl:text-2xl sm:w-2/3 text-dark/50">
           We look forward to hearing from you and working together to create stunning aerial photography and videos that will exceed your expectations.
           </p>
           <div className="flex mt-4 gap-x-1">
+            <Tag>Aerial</Tag>
             <Tag>Photography</Tag>
-            <Tag>Licensing</Tag>
-            <Tag>Branding</Tag>
+            <Tag>Video</Tag>
+            <Tag>Listing</Tag>
           </div>
         </div>
       </div>
@@ -58,7 +60,7 @@ const Work = () => {
   return (
     <div className="relative grid h-full grid-cols-1 gap-4 sm:grid-cols-1 isolate">
       <div className="flex items-center leading-none uppercase gap-x-2">
-        <span className="w-2.5 h-2.5 rounded bg-yolk border border-dark -mt-0.5" />
+        <FilmStrip />
         <h2 className="text-dark">Work</h2>
       </div>
       <div className="grid grid-flow-col pl-6 pr-6 -mx-6 overflow-x-auto gap-x-yeat auto-cols-custom md:auto-cols-auto sm:mx-0 sm:px-0">

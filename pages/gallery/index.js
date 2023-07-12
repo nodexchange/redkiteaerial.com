@@ -24,25 +24,20 @@ const FILTERS = [
     filter: "redkiteaerial",
   },
   {
-    title: "Concerts",
-    type: "concerts",
-    filter: "concerts",
+    title: "Real Estate",
+    type: "realestate",
+    filter: "realestate",
   },
   {
-    title: "Cityscapes & Architecture",
-    type: "architecture",
-    filter: "architecture",
+    title: "Airbnb",
+    type: "airbnb",
+    filter: "airbnb",
   },
   {
-    title: "Street",
-    type: "street",
-    filter: "street",
-  },
-  {
-    title: "The Outdoors",
-    type: "outdoors",
-    filter: "outdoors",
-  },
+    title: "Office",
+    type: "office",
+    filter: "office",
+  }
 ];
 
 const FilterTag = ({ filter, onClick, children }) => {
@@ -172,8 +167,7 @@ const Gallery = ({ images }) => {
           <Heading>Gallery</Heading>
           <div>
             <p className="text-sm mb-2">
-              Welcome to my portfolio! Here you&apos;ll find a selection of my
-              best work, from corporate to concert scenes. You can filter
+              Thank you for visiting Our Work section. Please note that you can filter
               through the buttons below. Explore and enjoy!
             </p>
             <div className="flex gap-0.5 flex-wrap">

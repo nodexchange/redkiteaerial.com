@@ -63,7 +63,7 @@ const gear_data = {
       subtitle: "Versatile, sharp and fast. What more can you ask for?",
       price: "£299",
       shortDesc:
-        "Sky View: Our comprehensive Drone Surveying Package offers high-precision video footage collected from the skies. Revolutionize your projects.",
+        "Sky View: Our comprehensive Drone Surveying Package offers high-precision video footage collected from the skies. Revolutionise your projects.",
       href: "https://amzn.to/3E3h5nw",
       image: ListingSunset,
       imageAlt: "",
