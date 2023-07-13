@@ -6,30 +6,27 @@ import NextImage from "next/legacy/image";
 import Link from "next/link";
 
 const Gallery = ({ selectedPhoto }) => {
-  // const router = useRouter();
-  // const { photoId } = router.query;
-  // let index = Number(photoId);
-
   const currentPhotoURL = `https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/image/upload/c_scale,w_2560/${selectedPhoto.public_id}.${selectedPhoto.format}`;
-
   return (
     <main className="relative">
       <div className="px-4 py-4">
         <div className="relative">
           <Link href="/gallery" passHref legacyBehavior>
-            <a className="rounded px-2 py-2 inline-block absolute top-4 left-4 bg-yolk text-black text-sm border-black border leading-none transition betterhover:hover:bg-yolk/75">
-              Back to Gallery
+            <a className="rounded px-2 py-2 inline-block absolute top-4 left-4 z-10 bg-yolk text-white text-sm border-black border leading-none transition betterhover:hover:bg-yolk/75">
+              Back to Our Work
             </a>
           </Link>
-          <NextImage
-            src={currentPhotoURL}
-            width={selectedPhoto.width}
-            height={selectedPhoto.height}
-            blurDataURL={selectedPhoto.blurDataUrl}
-            placeholder="blur"
-            className="rounded shadow"
-            alt=""
-          />
+          {selectedPhoto && (
+            <NextImage
+              src={currentPhotoURL}
+              width={selectedPhoto.width}
+              height={selectedPhoto.height}
+              blurDataURL={selectedPhoto.blurDataUrl}
+              placeholder="blur"
+              className="rounded shadow"
+              alt=""
+            />
+          )}
         </div>
       </div>
     </main>

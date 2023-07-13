@@ -45,7 +45,7 @@ const navigationLink = cva(['cursor-pointer'], {
         'text-left',
         'border-b',
         'border-stone-light',
-        "data-[active='true']:bg-yolk",
+        "data-[active='true']:bg-gray-500",
       ],
     },
   },

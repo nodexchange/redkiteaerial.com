@@ -13,7 +13,7 @@ import { cx } from "class-variance-authority";
 const gear_data = {
   premium: [
     {
-      heading: "Premium Service",
+      heading: "Our most popular service",
       title: "Premium Photo and Video Package (exteriors)",
       longTitle:
         "Photo and Video Package - 1 hour of shooting, 1 hour of editing",
@@ -63,7 +63,7 @@ const gear_data = {
       subtitle: "Versatile, sharp and fast. What more can you ask for?",
       price: "£299",
       shortDesc:
-        "Sky View: Our comprehensive Drone Surveying Package offers high-precision video footage collected from the skies. Revolutionise your projects.",
+        "Sky View: Our comprehensive Drone Surveying Package offers high-precision video footage collected from the skies. With the 4k High Definition video, you will be able to identify every detail.",
       href: "https://amzn.to/3E3h5nw",
       image: ListingSunset,
       imageAlt: "",

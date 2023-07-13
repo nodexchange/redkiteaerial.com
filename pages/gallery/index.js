@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import NextImage from "next/legacy/image";
+import NextImage from "next/image";
 import Link from "next/link";
 import cloudinary from "@/utils/cloudinary";
 import getBase64ImageUrl from "@/utils/generateBlurPlaceholder";
@@ -20,7 +20,7 @@ import { cx } from "class-variance-authority";
 const FILTERS = [
   {
     title: "All",
-    type: "all",
+    type: "redkiteaerial",
     filter: "redkiteaerial",
   },
   {
@@ -113,8 +113,6 @@ const Gallery = ({ images }) => {
     500: 1,
   };
 
-  console.log(type);
-
   return (
     <main className="relative">
       <Dialog open={open} onOpenChange={setOpen}>
@@ -139,16 +137,15 @@ const Gallery = ({ images }) => {
                   src={`https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/image/upload/c_scale,w_1440/${selectedImage.public_id}.${selectedImage.format}`}
                   placeholder="blur"
                   blurDataURL={selectedImage.blurDataURL}
-                  // width={selectedImage.width}
-                  // height={selectedImage.height}
-                  fill
+                  fill={true}
+                  style={{objectFit: "contain"}}
                   className="rounded shadow-md !relative"
                 />
               </div>
-              <div className="flex gap-x-2 absolute top-4 right-4">
+              <div className="flex gap-x-2 absolute top-14 right-4">
                 {/* <button>Share</button> */}
                 <DialogClose
-                  className="rounded-full bg-white/10 text-white p-2.5 leading-none hover:bg-black transition shrink-0"
+                  className="rounded-full bg-white/10 text-black p-2.5 leading-none hover:bg-white transition shrink-0"
                   onClick={() => router.back()}
                 >
                   <X />
@@ -164,13 +161,12 @@ const Gallery = ({ images }) => {
         columnClassName="my-masonry-grid_column"
       >
         <div className="h-96 border border-black rounded px-4 pt-2 pb-5 flex flex-col justify-between">
-          <Heading>Gallery</Heading>
+          <Heading>Our Work</Heading>
           <div>
             <p className="text-sm mb-2">
-              Thank you for visiting Our Work section. Please note that you can filter
-              through the buttons below. Explore and enjoy!
+              Step into a captivating world of breathtaking aerials and mesmerising perspectives. Here, we proudly showcase our exceptional aerial photography and video masterpieces tailored exclusively for real estate and Airbnb listings.  From sprawling estates with panoramic views to cozy Airbnb retreats nestled amidst nature's embrace, each photograph and video showcases the distinctive charm and allure of the properties we have had the privilege to capture.
             </p>
-            <div className="flex gap-0.5 flex-wrap">
+            {/* <div className="flex gap-0.5 flex-wrap">
               {FILTERS.map(({ filter, type, title }) => (
                 <FilterTag
                   key={type}
@@ -180,7 +176,7 @@ const Gallery = ({ images }) => {
                   {title}
                 </FilterTag>
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -190,7 +186,6 @@ const Gallery = ({ images }) => {
               <Link
                 href={`/gallery/?photoId=${id}`}
                 as={`/gallery/${id}`}
-                shallow
               >
                 <MotionImage
                   // initial={{ scale: 0.8, opacity: 0 }}
@@ -240,14 +235,16 @@ export async function getStaticProps() {
   let reducedResults = [];
   let i = 0;
   for (let result of results.resources) {
-    reducedResults.push({
-      id: i,
-      height: result.height,
-      width: result.width,
-      public_id: result.public_id,
-      format: result.format,
-    });
-    i++;
+    if (result.resource_type === 'image') {
+      reducedResults.push({
+        id: i,
+        height: result.height,
+        width: result.width,
+        public_id: result.public_id,
+        format: result.format,
+      });
+      i++;
+    }
   }
 
   const blurImagePromises = results.resources.map((image) => {
