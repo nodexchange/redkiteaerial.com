@@ -88,7 +88,7 @@ const Contact = () => {
 
   return (
     <>
-      <div style={{ height: "85vh" }}>
+      <div style={{ height: "85vh" }} className='mb-[60px] md:mb-0'>
         <div className="grid w-full h-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8">
           <div className="flex flex-col px-6 md:px-4 gap-y-6">
             <div className="flex items-center leading-none uppercase gap-x-2">
@@ -110,7 +110,7 @@ const Contact = () => {
               redkiteaerial<span className="hidden">null</span>@gmail.com
             </Button>
           </div>
-          <div className="flex flex-col justify-end col-span-1 p-6 -mt-10 md:pl-4 md:border-l">
+          <div className="flex flex-col justify-end col-span-1 p-6 pt-14 -mt-10 md:pl-4 md:border-l md:mt-10 md:pt-6">
             <Form />
           </div>
         </div>
