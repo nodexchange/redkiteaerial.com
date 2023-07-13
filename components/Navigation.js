@@ -2,6 +2,7 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import clsx from 'clsx';
 import Link from 'next/link';
+import NextImage from 'next/image';
 import { motion } from 'framer-motion';
 import { ContactDialog } from '@/sections/Contact';
 import { SheetContext } from '@/components/Sheet';
@@ -85,7 +86,10 @@ const Navigation = () => {
               className="font-mtl-bold text-xl"
               legacyBehavior
               passHref>
-              <NavigationMenu.Link>Red Kite Aerial</NavigationMenu.Link>
+                <div className='cursor-pointer'>
+                  <NextImage src="/images/logos/logo.png" width={300} height={75} />
+                </div>
+              {/* <NavigationMenu.Link>Red Kite Aerial</NavigationMenu.Link> */}
             </Link>
           </NavigationMenu.Item>
           {navLinks.map((link) => {
