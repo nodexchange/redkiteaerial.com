@@ -84,7 +84,7 @@ const ContactDialog = ({ open, onOpenChange, children, ...props }) => {
 };
 
 const Contact = () => {
-  const [value, copy] = useCopyToClipboard("redkiteaerial@gmail.com");
+  const [value, copy] = useCopyToClipboard("redkiteaerial@outlook.com");
 
   return (
     <>
@@ -107,7 +107,7 @@ const Contact = () => {
               className="sm:py-1.5 text-lg normal-case md:text-2xl"
               onClick={copy}
             >
-              redkiteaerial<span className="hidden">null</span>@gmail.com
+              redkiteaerial<span className="hidden">null</span>@outlook.com
             </Button>
           </div>
           <div className="flex flex-col justify-end col-span-1 p-6 pt-14 -mt-10 md:pl-4 md:border-l md:mt-10 md:pt-6">

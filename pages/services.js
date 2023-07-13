@@ -36,7 +36,7 @@ const AboutText = () => (
       </p>
       <p className="text-lg sm:text-xl">
       <a
-          href="mailto:redkiteaerial@gmail.com"
+          href="mailto:redkiteaerial@outlook.com"
           className="relative better-underline betterhover:hover:text-white"
         >Contact us</a> today to discuss your specific requirements and let our team of experts create captivating visuals that will set you apart in the real estate and Airbnb markets.
       </p>
