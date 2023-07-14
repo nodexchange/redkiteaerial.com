@@ -39,7 +39,7 @@ const Footer = () => {
         ))}
       </ul>
       <div className="mt-4 text-xs max-w-prose text-kite-blue">
-        Created by <a href="http://alyssacreative.co.uk/">AS Creative</a> - ©Red Kite Aerial - All Rights Reserved - 2023. <br/> Registered in England and Wales.
+        ©Red Kite Aerial - All Rights Reserved - 2023. <br/> Registered in England and Wales. Website created by <a href="http://alyssacreative.co.uk/">AS Creative</a>. Hosted by <a href="https://www.vercel.com/">Vercel</a>.
       </div>
     </footer>
   );
