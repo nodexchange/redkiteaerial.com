@@ -19,7 +19,7 @@ const MyApp = ({ Component, pageProps }) => {
             title={undefined}
             titleTemplate="%s | Red Kite Aerial"
             defaultTitle="Red Kite Aerial | Drone Photography and Video Service"
-            description="Premium Photo and Video services for breathtaking Aerial Photography and captivating Video services based in Radnage, Buckinghamshire, UK. We specialise in Real Estate & Airbnb listing as well as commercial property footage capture. Check our affordable services and book now!"
+            description="Elevate Your Real Estate and Airbnb Listings! Premium services for breathtaking Aerial Photography and captivating Video services based in Radnage, Buckinghamshire, UK."
             canonical="https://redkiteaerial.co.uk"
             twitter={{
               handle: "@redkiteaerial",
@@ -31,7 +31,7 @@ const MyApp = ({ Component, pageProps }) => {
               locale: "en_CA",
               url: "https://redkiteaerial.co.uk",
               title: "Red Kite Aerial | Drone Photography and Video Service",
-              description: "Premium Photo and Video services for breathtaking Aerial Photography and captivating Video services based in Radnage, Buckinghamshire, UK. We specialise in Real Estate & Airbnb listing as well as commercial property footage capture. Check our affordable services and book now!",
+              description: "Elevate Your  Real Estate and Airbnb Listings! Premium services for breathtaking Aerial Photography and captivating Video services based in Radnage, Buckinghamshire, UK.",
               images: [
                 {
                   url: "https://redkiteaerial.co.uk/images/og.png",
