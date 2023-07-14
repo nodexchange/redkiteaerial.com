@@ -45,8 +45,8 @@ const navigationLink = cva(['cursor-pointer'], {
         'leading-none',
         'text-left',
         'border-b',
-        'border-stone-light',
-        "data-[active='true']:bg-gray-500",
+        'border-kite-light',
+        "data-[active='true']:bg-kite",
       ],
     },
   },
@@ -79,7 +79,7 @@ const Navigation = () => {
     <>
       <ContactDialog open={open} onOpenChange={setOpen} />
       <NavigationMenu.Root>
-        <NavigationMenu.List className="pt-4 pb-4 px-4 mx-auto flex items-center justify-center w-full text-md gap-x-2 border-b border-stone-light">
+        <NavigationMenu.List className="pt-4 pb-4 px-4 mx-auto flex items-center justify-center w-full text-md gap-x-2 border-b border-kite-light">
           <NavigationMenu.Item className="mr-auto">
             <Link
               href="/"

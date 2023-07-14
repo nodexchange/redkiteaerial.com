@@ -84,10 +84,10 @@ const GearItem = ({
 }) => {
   return (
     <div className="grid py-6 md:grid-cols-2 gap-x-12">
-      <span className="text-xs uppercase col-span-full text-stone">
+      <span className="text-xs uppercase col-span-full text-kite">
         {heading}
       </span>
-      <div className="grid w-full bg-white border rounded border-stone-light place-content-center h-72 md:h-auto">
+      <div className="grid w-full bg-white border rounded border-kite-light place-content-center h-72 md:h-auto">
         <div className="w-fit">
           <NextImage
             src={image}
@@ -103,7 +103,7 @@ const GearItem = ({
           <br/>
           <p>{price}</p>
         </div>
-        <p className="max-w-screen-sm text-xl md:mb-12 text-stone-blue">
+        <p className="max-w-screen-sm text-xl md:mb-12 text-kite-blue">
           {description}
         </p>
         <a
@@ -122,7 +122,7 @@ const GearItem = ({
 const GearItemSmall = ({ image, href, imageAlt, scale, shortDesc, price, title }) => {
   return (
     <a href={href} className="flex flex-col group">
-      <div className="grid transition-all duration-300 bg-white border rounded aspect-square border-stone-light place-content-center group-hover:shadow group-hover:shadow-yolk group-hover:border-yolk">
+      <div className="grid transition-all duration-300 bg-white border rounded aspect-square border-kite-light place-content-center group-hover:shadow group-hover:shadow-yolk group-hover:border-yolk">
         <div className="transition duration-300 w-fit group-hover:scale-95">
           <NextImage
             src={image}
@@ -132,7 +132,7 @@ const GearItemSmall = ({ image, href, imageAlt, scale, shortDesc, price, title }
         </div>
       </div>
       <h3 className="mt-4 text-md font-mtl-bold">{title}</h3>
-      <p className="mt-0 mb-1 md:mb-8 text-md max-w-prose text-stone-blue">
+      <p className="mt-0 mb-1 md:mb-8 text-md max-w-prose text-kite-blue">
         {shortDesc}
       </p>
       <p>
@@ -167,14 +167,14 @@ const Services = () => {
           </div>
 
           <div className="relative w-full col-span-2 px-6 md:px-4">
-            <div className="mb-2 overflow-hidden bg-white border rounded h-[48rem] border-stone-light">
+            <div className="mb-2 overflow-hidden bg-white border rounded h-[48rem] border-kite-light">
               <NextImage
                 src={ListingAerial}
                 className="rounded"
                 style={{ objectFit: "cover", height: "100%" }}
               />
             </div>
-            <span className="inline-block w-full p-1 text-sm text-center border rounded text-stone-blue">
+            <span className="inline-block w-full p-1 text-sm text-center border rounded text-kite-blue">
               Photo taken on {" "}
               <Link
                 isExternal

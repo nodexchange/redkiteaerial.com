@@ -30,7 +30,7 @@ const Footer = () => {
   );
   
   return (
-    <footer className="flex flex-col px-6 py-6 text-sm border-t md:text-lg border-stone-light md:px-4">
+    <footer className="flex flex-col px-6 py-6 text-sm border-t md:text-lg border-kite-light md:px-4">
       <ul className="flex gap-x-2">
         {footerLinks.map((link, index) => (
           <Item key={index} href={link.href}>
@@ -38,7 +38,7 @@ const Footer = () => {
           </Item>
         ))}
       </ul>
-      <div className="mt-4 text-xs max-w-prose text-stone-blue">
+      <div className="mt-4 text-xs max-w-prose text-kite-blue">
         Created by <a href="http://alyssacreative.co.uk/">AS Creative</a> - ©Red Kite Aerial - All Rights Reserved - 2023. <br/> Registered in England and Wales.
       </div>
     </footer>

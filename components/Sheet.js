@@ -34,7 +34,7 @@ const SheetContent = ({ open, children }) => {
               >
                 <Dialog.Close asChild>
                   <motion.button
-                    className="absolute p-1 transition-colors rounded text-stone betterhover:hover:text-yolk top-4 right-4"
+                    className="absolute p-1 transition-colors rounded text-kite betterhover:hover:text-yolk top-4 right-4"
                     whileTap={{
                       scale: 0.85,
                       transition: {

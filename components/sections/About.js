@@ -26,7 +26,7 @@ const About = () => {
             
             Elevate Your Listings with{' '}
             <Tooltip text="Buckinghamshire Based Drone experts">
-              <span className="font-light text-stone">{' '}Red Kite Aerial</span>
+              <span className="font-light text-kite">{' '}Red Kite Aerial</span>
             </Tooltip>
             <br/> We are imaging Experts transforming 
             <b className="font-mtl-bold">{' '}Commercial Real Estate, Airbnb, and Office listing</b> 

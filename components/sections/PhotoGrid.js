@@ -99,7 +99,7 @@ const PhotoGrid = () => {
             return (
               <DialogTrigger
                 key={image.key}
-                className="relative w-full overflow-hidden transition-all duration-500 border rounded-lg shadow betterhover:hover:shadow-xl betterhover:hover:shadow-yolk/50 betterhover:hover:border-yolk border-stone photo-grid-item"
+                className="relative w-full overflow-hidden transition-all duration-500 border rounded-lg shadow betterhover:hover:shadow-xl betterhover:hover:shadow-yolk/50 betterhover:hover:border-yolk border-kite photo-grid-item"
                 onClick={() => {
                   setSelected(image.key);
                   splitbee.track("Open Photo", { title: image.title });

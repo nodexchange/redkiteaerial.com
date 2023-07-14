@@ -1,9 +1,9 @@
 import { Text } from "@components";
 import NextImage from "next/legacy/image";
 import { FilmStrip } from "phosphor-react";
-import delta from "../../public/images/delta.jpg";
-import uber_team from "../../public/images/uber_team.jpg";
-import shopify from "../../public/images/shopify.jpg";
+import foxtons from "../../public/images/foxtons.jpg";
+import savills from "../../public/images/savills.jpg";
+import mp from "../../public/images/mp.jpg";
 
 const ColumnOne = () => {
 
@@ -38,9 +38,9 @@ const ColumnOne = () => {
 
 const ImageLayout = ({ logo, src, logoAlt, alt, className }) => {
   return (
-    <div className="grid overflow-hidden border rounded h-fit border-stone sm:first:ml-0 sm:last:mr-0 isolate">
+    <div className="grid overflow-hidden border rounded h-fit border-kite sm:first:ml-0 sm:last:mr-0 isolate">
       <div className="z-10 flex flex-col items-center justify-center text-white gap-y-4 -mt-yeat overlay">
-        <div className={`relative w-20 h-20 sm:w-40 sm:h-40 overflow-hidden ${className}`}>
+        <div className={`relative w-20 h-20 sm:w-64 sm:h-64 overflow-hidden ${className}`}>
           <NextImage layout="fill" objectFit="contain" src={logo} alt={logoAlt} />
         </div>
       </div>
@@ -64,9 +64,9 @@ const Work = () => {
         <h2 className="text-dark">Work</h2>
       </div>
       <div className="grid grid-flow-col pl-6 pr-6 -mx-6 overflow-x-auto gap-x-yeat auto-cols-custom md:auto-cols-auto sm:mx-0 sm:px-0">
-        <ImageLayout src={shopify} alt="" logoAlt="Shopify logo"  logo="/images/logos/shopify-logo.png" />
-        <ImageLayout src={uber_team}  alt="" logoAlt="Uber logo" logo="/images/logos/uber-logo.png" />
-        <ImageLayout src={delta} alt="" logoAlt="Delta Hotels logo"  logo="/images/logos/delta-hotels-logo.png" className="brightness-0 invert" />
+        <ImageLayout src={foxtons} alt="Foxtons Estate Agency" logoAlt="Foxtons" logo="/images/logos/foxtons.png" />
+        <ImageLayout src={mp}  alt="" logoAlt="Marsh & Peterson logo" logo="/images/logos/mp.png" className="brightness-0 invert" />
+        <ImageLayout src={savills} alt="" logoAlt="Savills" logo="/images/logos/savills.png"/>
       </div>
       <ColumnOne />
     </div>

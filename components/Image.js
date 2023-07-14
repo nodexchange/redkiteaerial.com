@@ -23,7 +23,7 @@ export const Image = ({
         {
           content: hasOverlay,
           "border-yolk": border === "yolk",
-          "border-stone": border === "stone" || !border,
+          "border-kite": border === "kite" || !border,
           "cursor-pointer": pointer,
           "aspect-2/3": vertical && !aspectRatio && (!width || !height),
           "aspect-3/2": !vertical && !aspectRatio && (!width || !height),

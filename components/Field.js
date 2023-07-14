@@ -58,9 +58,9 @@ const input = cva(
     "px-2",
     "placeholder:transition-all",
     "placeholder:duration-250",
-    "placeholder:text-stone/70",
-    "hover:placeholder:text-stone",
-    "focus-within:placeholder:text-stone",
+    "placeholder:text-kite/70",
+    "hover:placeholder:text-kite",
+    "focus-within:placeholder:text-kite",
     // "text-base",
     "shadow-sm",
     "focus-visible:shadow-md",
@@ -70,7 +70,7 @@ const input = cva(
       intent: {
         base: [
           "bg-eggshell",
-          "border-stone/50",
+          "border-kite/50",
           "hover:border-yolk",
           "focus-visible:border-yolk",
           "hover:focus-visible:ring-yolk/50",

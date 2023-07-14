@@ -41,10 +41,10 @@ module.exports = {
         // eggshell: "#F8F8F8",
         eggshell: "#F5F7FA",
         // eggshell: "#f6fafd",
-        stone: {
-          DEFAULT: "#A4A4A4",
-          light: "#cbd6e0",
-          blue: "#5f6486",
+        kite: {
+          DEFAULT: "#b05d46",
+          light: "#be9d94",
+          blue: "#551c0c",
         },
         dark: "#030303",
       },

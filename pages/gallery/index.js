@@ -209,7 +209,7 @@ const Gallery = ({ images }) => {
                     });
                     setOpen(true);
                   }}
-                  className="cursor-pointer block overflow-hidden transition-all duration-500 border rounded-lg shadow betterhover:hover:shadow-xl betterhover:hover:shadow-yolk/50 betterhover:hover:border-yolk border-stone"
+                  className="cursor-pointer block overflow-hidden transition-all duration-500 border rounded-lg shadow betterhover:hover:shadow-xl betterhover:hover:shadow-yolk/50 betterhover:hover:border-yolk border-kite"
                   alt=""
                   placeholder="blur"
                   blurDataURL={blurDataUrl}
