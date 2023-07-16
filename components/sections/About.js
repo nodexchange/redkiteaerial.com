@@ -29,9 +29,9 @@ const About = () => {
               <span className="font-light text-kite">{' '}Red Kite Aerial</span>
             </Tooltip>
             <br/> We are imaging Experts transforming 
-            <b className="font-mtl-bold">{' '}Commercial Real Estate, Airbnb, and Office listing</b> 
+            <b className="font-mtl-bold">{' '} your Real Estate, Airbnb, and Commercial listing</b> 
             {' '} with {' '}
-            <b className="font-mtl-bold">Breathtaking</b> Photography and Video Services through every
+            <b className="font-mtl-bold">Breathtaking bird's-eye</b> Photography and Video Services through every
             capture. With transparent pricing tailored to your needs, we are the perfect partner for your next project.
           </p>
           <NextLink href="/services" passHref legacyBehavior>

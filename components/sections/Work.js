@@ -19,7 +19,7 @@ const ColumnOne = () => {
       <div className="flex flex-col justify-between h-full">
         <div>
           <Text className="text-2xl xl:text-5xl">
-           {'Whether you\'re in the real estate industry, managing Airbnb listings, or need aerial visuals for office buildings or any other applications, we are here to provide personalised solutions that meet your specific requirements.'}
+           {'Whether you\'re in the real estate industry, managing Airbnb listings, or need aerial visuals for your business or any other applications, we are here to provide personalised solutions that meet your specific requirements.'}
           </Text>
           <p className="w-full mt-2 text-md xl:text-2xl sm:w-2/3 text-dark/50">
           We look forward to hearing from you and working together to create stunning aerial photography and videos that will exceed your expectations.

@@ -35,9 +35,9 @@ const FILTERS = [
     filter: "airbnb",
   },
   {
-    title: "Office",
-    type: "office",
-    filter: "office",
+    title: "Commercial",
+    type: "commercial",
+    filter: "commercial",
   }
 ];
 
@@ -167,7 +167,7 @@ const Gallery = ({ images }) => {
             <Heading>Our Work</Heading>
             <div>
               <p className="text-sm mb-2">
-                Step into a captivating world of breathtaking aerials and mesmerising perspectives. Here, we proudly showcase our exceptional aerial photography and video masterpieces tailored exclusively for real estate and Airbnb listings.  From sprawling estates with panoramic views to cozy Airbnb retreats nestled amidst nature&apos;s embrace, each photograph and video showcases the distinctive charm and allure of the properties we have had the privilege to capture.
+                Step into a captivating world of breathtaking bird&apos;s-eye aerials and mesmerising perspectives. Here, we proudly showcase our exceptional aerial photography and video masterpieces tailored exclusively for real estate and Airbnb listings.  From sprawling estates with panoramic views to cozy Airbnb retreats nestled amidst nature&apos;s embrace, each photograph and video showcases the distinctive charm and allure of the properties we have had the privilege to capture.
               </p>
               {/* <div className="flex gap-0.5 flex-wrap">
                 {FILTERS.map(({ filter, type, title }) => (

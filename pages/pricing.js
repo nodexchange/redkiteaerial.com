@@ -21,7 +21,7 @@ const gear_data = {
       price: "£499",
       shortDesc: "1 hour of shooting, 1 hour of editing",
       description:
-        "Aerial: Our Premium Package combines breathtaking aerial photography and captivating video to showcase your real estate property's exterior like never before. Highlighting every detail, our expert team ensures a visually stunning experience that attracts discerning buyers or renters. Contact us now!.",
+        "Aerial: Our Premium Package combines breathtaking bird's-eye aerial photography and captivating video to showcase your real estate property's exterior like never before. Highlighting every detail, our expert team ensures a visually stunning experience that attracts discerning buyers or renters. Contact us now!.",
       href: "https://redkiteaerial.co.uk/gallery",
       image: ListingAirBnb,
       imageAlt: "Example of Video Footage",
@@ -36,7 +36,7 @@ const gear_data = {
       subtitle: "Versatile, sharp and fast. What more can you ask for?",
       price: "£999",
       shortDesc:
-        "Elevate: Our Complete Package offers an all-encompassing experience, capturing the essence of your real estate property from both the exterior and interior. With breathtaking aerial photography and captivating video, we showcase every architectural detail and showcase the exquisite design of your property.",
+        "Elevate: Our Complete Package offers an all-encompassing experience, capturing the essence of your real estate property from both the exterior and interior. With breathtaking bird's-eye aerial photography and captivating video, we showcase every architectural detail and showcase the exquisite design of your property.",
       href: "https://amzn.to/3DWAqGU",
       image: ListingLake,
       imageAlt: "",
