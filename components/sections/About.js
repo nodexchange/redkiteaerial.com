@@ -31,7 +31,7 @@ const About = () => {
             <br/> We are imaging Experts transforming 
             <b className="font-mtl-bold">{' '} your Real Estate, Airbnb, and Commercial listing</b> 
             {' '} with {' '}
-            <b className="font-mtl-bold">Breathtaking bird's-eye</b> Photography and Video Services through every
+            <b className="font-mtl-bold">Breathtaking bird&apos;s-eye</b> Photography and Video Services through every
             capture. With transparent pricing tailored to your needs, we are the perfect partner for your next project.
           </p>
           <NextLink href="/services" passHref legacyBehavior>
