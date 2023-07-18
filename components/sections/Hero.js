@@ -1,7 +1,7 @@
 import NextImage from "next/legacy/image";
 import { motion } from "framer-motion";
 import { useIsSmall } from "@/hooks/useBreakpoint";
-import nyc_lookdown from "../../public/images/new-york-city-lookdown.jpg";
+import hero from "../../public/images/hero.jpg";
 
 const Hero = () => {
   const isSmall = useIsSmall();
@@ -19,23 +19,25 @@ const Hero = () => {
             className="-mt-4 text-2xl text-center text-white md:text-6xl font-mtl-bold"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.8 }}
+            transition={{ delay: 1.5, duration: 0.8 }}
           >
             Elevate your Real Estate & Airbnb listings <br/> with Stunning Photography & Video
           </motion.h1>
         </div>
         <motion.div
-          className="relative flex items-center justify-center w-full h-full overflow-hidden content brightness-50"
+          className="relative flex items-center justify-center w-full h-full overflow-hidden content"
           layout
-          animate={{ borderRadius: "8px" }}
-          transition={{ delay: 1.4, duration: 0.7 }}
+          // brightness
+          initial={{filter: "brightness(0.8)"}}
+          animate={{ borderRadius: "8px", filter: "brightness(0.5)" }}
+          transition={{ delay: 0.5, duration: 1.7 }}
         >
           <NextImage
-            src={nyc_lookdown}
+            src={hero}
             layout="fill"
             objectFit="cover"
             priority
-            alt="Photo of New York City streets filled with yellow taxi cabs, taken from on top of a building with a reflection of the streets."
+            alt="A sunset aerial drone shot for Radnage village located in Buckinghamshire."
             quality={5}
           />
         </motion.div>

@@ -29,10 +29,10 @@ const navigationLink = cva(['cursor-pointer'], {
         'px-2',
         'transition',
         'rounded',
-        'hover:bg-black/10',
+        'hover:bg-kite/10',
         'font-medium',
-        'focus:bg-black/10',
-        "data-[active='true']:bg-black",
+        'focus:bg-kite/10',
+        "data-[active='true']:bg-kite",
         "data-[active='true']:text-white",
       ],
       mobile: [

@@ -58,7 +58,7 @@ export default function Services() {
         </div>
         <div className="grid px-6 gap-x-12 gap-y-4 md:px-4 md:grid-cols-2">
           <Image
-            src="/images/man-standing-in-montreal-metro.jpg"
+            src="/images/city-townhall.jpg"
             alt="Photo of myself"
             priority
           />

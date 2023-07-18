@@ -19,7 +19,7 @@ export const Image = ({
   return (
     <div
       className={clsx(
-        "relative w-full overflow-hidden rounded-lg transition-all border shadow betterhover:hover:shadow-xl betterhover:hover:shadow-yolk/50 duration-500 betterhover:hover:border-yolk",
+        "relative w-full overflow-hidden rounded-lg transition-all border shadow betterhover:hover:shadow-xl betterhover:hover:shadow-kite/50 duration-500 betterhover:hover:border-kite",
         {
           content: hasOverlay,
           "border-yolk": border === "yolk",

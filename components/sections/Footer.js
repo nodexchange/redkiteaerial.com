@@ -3,14 +3,14 @@ import splitbee from "@splitbee/web";
 const Footer = () => {
 
   const footerLinks = [
-    {
-      href: "https://www.twitter.com/redkiteaerial",
-      text: "Twitter",
-    },
-    {
-      href: "https://www.instagram.com/redkiteaerial",
-      text: "Instagram",
-    },
+    // {
+    //   href: "https://www.twitter.com/redkiteaerial",
+    //   text: "Twitter",
+    // },
+    // {
+    //   href: "https://www.instagram.com/redkiteaerial",
+    //   text: "Instagram",
+    // },
     // {
     //   href: "https://500px.com/redkiteaerial",
     //   text: "500px",

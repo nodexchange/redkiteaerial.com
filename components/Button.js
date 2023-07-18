@@ -8,7 +8,7 @@ const button = cva(["button"], {
         "bg-yolk",
         "text-white",
         "border-dark",
-        "betterhover:hover:bg-yolk/75",
+        "betterhover:hover:bg-kite/75",
         "font-medium",
         "outline-none",
         "focus:ring-4",

@@ -1,7 +1,7 @@
 import { Button, Tooltip, Marquee, Image } from "@components";
 import { Package, ArrowRight } from "phosphor-react";
 import NextLink from "next/link";
-import idx_me from "../../public/images/man-standing-in-montreal-metro.jpg";
+import idx_me from "../../public/images/city-townhall.jpg";
 
 const About = () => {
   return (

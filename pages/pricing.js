@@ -122,7 +122,7 @@ const GearItem = ({
 const GearItemSmall = ({ image, href, imageAlt, scale, shortDesc, price, title }) => {
   return (
     <a href={href} className="flex flex-col group">
-      <div className="grid transition-all duration-300 bg-white border rounded aspect-square border-kite-light place-content-center group-hover:shadow group-hover:shadow-yolk group-hover:border-yolk">
+      <div className="grid transition-all duration-300 bg-white border rounded aspect-square border-kite-light place-content-center group-hover:shadow group-hover:shadow-kite group-hover:border-kite">
         <div className="transition duration-300 w-fit group-hover:scale-95">
           <NextImage
             src={image}

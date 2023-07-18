@@ -23,8 +23,8 @@ export default function Home() {
         name="Red Kite Aerial"
         url="http://www.redkiteaerial.co.uk"
         sameAs={[
-          "http://www.facebook.com/redkiteaerial",
-          "http://instagram.com/redkiteaerial",
+          // "http://www.facebook.com/redkiteaerial",
+          // "http://instagram.com/redkiteaerial",
           "http://www.twitter.com/redkiteaerial",
         ]}
       />
