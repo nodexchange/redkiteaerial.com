@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { Text, Button, Heading } from "@components";
-import useCopyToClipboard from "@/hooks/useCopyToClipboard";
+// import useCopyToClipboard from "@/hooks/useCopyToClipboard";
 import { ArrowRight } from "phosphor-react";
 import { Input, TextArea } from "@/components/Field";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/Sheet";
@@ -84,7 +84,7 @@ const ContactDialog = ({ open, onOpenChange, children, ...props }) => {
 };
 
 const Contact = () => {
-  const [value, copy] = useCopyToClipboard("redkiteaerial@outlook.com");
+  // const [value, copy] = useCopyToClipboard("redkiteaerial@outlook.com");
 
   return (
     <>
@@ -96,19 +96,26 @@ const Contact = () => {
               <h2>Contact</h2>
             </div>
             <Text>
-              {`We would love to hear from you! If you have any inquiries or would like to discuss your aerial photography and video needs, please don't hesitate to reach out to us. Our team at Red Kite Aerial is ready to assist you in capturing stunning imagery that will elevate your projects.`}
+              {`We would love to hear from you! If you have any inquiries or would like to discuss your aerial photography and video needs, please don't hesitate to reach out to us.`}
+            </Text>
+            <Text>
+              {`Our team at Red Kite Aerial is ready to assist you in capturing stunning imagery that will elevate your projects.`}
+            </Text>
+            <Text>
+              {`Click on our email address to get in touch or alternatively fill out the form below.`}
             </Text>
           </div>
           <div className="pl-6 md:pl-0 lg:place-self-center">
             <div className="text-sm uppercase text-white/50">
-              {value ? "Copied!" : "Click to copy ⬎"}
+              {/* {value ? "Copied!" : "Click to copy ⬎"} */}
             </div>
-            <Button
+            <a
               className="sm:py-1.5 text-lg normal-case md:text-2xl"
-              onClick={copy}
+              href={`mailto:redkiteaerial@outlook.com`}
+              target="_blank"
             >
-              redkiteaerial<span className="hidden">null</span>@outlook.com
-            </Button>
+              redkiteaerial@outlook.com
+            </a>
           </div>
           <div className="flex flex-col justify-end col-span-1 p-6 pt-14 -mt-10 md:pl-4 md:border-l md:mt-10 md:pt-6">
             <Form />

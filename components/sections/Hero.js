@@ -21,7 +21,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.5, duration: 0.8 }}
           >
-            Elevate your Real Estate & Airbnb listings <br/> with Stunning Photography & Video
+            Elevate your Real Estate and Airbnb listings <br/> with Stunning Photography & Video
           </motion.h1>
         </div>
         <motion.div
