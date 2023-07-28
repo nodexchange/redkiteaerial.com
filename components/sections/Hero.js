@@ -37,6 +37,8 @@ const Hero = () => {
             layout="fill"
             objectFit="cover"
             priority
+            placeholder='blur'
+            blurDataURL='/images/hero-blur.jpg'
             alt="A sunset aerial drone shot for Radnage village located in Buckinghamshire."
             quality={5}
           />

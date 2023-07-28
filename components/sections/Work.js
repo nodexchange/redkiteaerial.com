@@ -1,6 +1,6 @@
 import { Text } from "@components";
 import NextImage from "next/legacy/image";
-import { FilmStrip } from "phosphor-react";
+import { House } from "phosphor-react";
 import foxtons from "../../public/images/foxtons.jpg";
 import savills from "../../public/images/savills.jpg";
 import mp from "../../public/images/mp.jpg";
@@ -60,8 +60,8 @@ const Work = () => {
   return (
     <div className="relative grid h-full grid-cols-1 gap-4 sm:grid-cols-1 isolate">
       <div className="flex items-center leading-none uppercase gap-x-2">
-        <FilmStrip />
-        <h2 className="text-dark">Work</h2>
+        <House />
+        <h2 className="text-dark">Clients</h2>
       </div>
       <div className="grid grid-flow-col pl-6 pr-6 -mx-6 overflow-x-auto gap-x-yeat auto-cols-custom md:auto-cols-auto sm:mx-0 sm:px-0">
         <ImageLayout src={foxtons} alt="Foxtons Estate Agency" logoAlt="Foxtons" logo="/images/logos/foxtons.png" />

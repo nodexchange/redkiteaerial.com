@@ -110,7 +110,7 @@ const Contact = () => {
               {/* {value ? "Copied!" : "Click to copy ⬎"} */}
             </div>
             <a
-              className="sm:py-1.5 text-lg normal-case md:text-2xl"
+              className="relative underline text-kite z-10 sm:py-1.5 text-lg normal-case md:text-2xl"
               href={`mailto:redkiteaerial@outlook.com`}
               target="_blank"
             >

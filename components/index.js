@@ -8,6 +8,7 @@ import Text from "@/components/Text";
 import GuidingLines from "@/components/GuidingLines";
 import Image from "@/components/Image";
 import Sheet from "@/components/Sheet";
+import VideoPlayer from "@/components/VideoPlayer";
 
 export {
   Button,
@@ -20,4 +21,5 @@ export {
   Sheet,
   Text,
   Tooltip,
+  VideoPlayer
 };

@@ -6,6 +6,8 @@ import Footer from "@/sections/Footer";
 import Hero from "@/sections/Hero";
 import Work from "@/sections/Work";
 import CallToAction from "@/sections/CallToAction";
+import VideoPlayer from "@/components/VideoPlayer";
+
 
 import Script from "next/script";
 import { SocialProfileJsonLd, WebPageJsonLd } from "next-seo";
@@ -35,6 +37,9 @@ export default function Home() {
           <About />
         </Section>
         <Break />
+        <Section>
+          <VideoPlayer />
+        </Section>
         <section className="h-auto px-6 md:px-4">
           <PhotoGrid />
         </section>
@@ -44,7 +49,7 @@ export default function Home() {
         </Section>
         <CallToAction />
         <Break />
-        <section className="min-h-full">
+        <section className="min-h-full h-[85vh] overflow-scroll">
           <Contact />
         </section>
         <Footer />

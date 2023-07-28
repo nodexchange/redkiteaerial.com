@@ -25,7 +25,7 @@ const About = () => {
           <p className="mb-4 text-2xl xl:text-5xl pt-4">
             
             Elevate Your Listings with{' '}
-            <Tooltip text="Buckinghamshire Based Drone experts">
+            <Tooltip text="Drone Photography and Video experts based in Buckinghamshire">
               <span className="font-light text-kite">{' '}Red Kite Aerial</span>
             </Tooltip>
             <br/> We are imaging Experts transforming 

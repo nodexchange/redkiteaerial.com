@@ -25,6 +25,10 @@ body {
   font-size: 18px;
 }
 
+video {
+  object-fit: fill;
+}
+
 ::selection {
   @apply bg-yolk/50;
 }
