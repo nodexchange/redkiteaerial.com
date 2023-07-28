@@ -18,6 +18,8 @@ const VidPlayer = React.memo(({ videoRef }) => {
   );
 });
 
+VidPlayer.displayName = 'VidPlayer';
+
 const VideoPlayer = () => {
   const videoRef = useRef();
   const { ref, inView } = useInView({
