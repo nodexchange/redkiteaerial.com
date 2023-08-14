@@ -1,25 +1,25 @@
-import splitbee from "@splitbee/web";
+import splitbee from '@splitbee/web';
 
 const Footer = () => {
-
   const footerLinks = [
     // {
     //   href: "https://www.twitter.com/redkiteaerial",
     //   text: "Twitter",
     // },
-    // {
-    //   href: "https://www.instagram.com/redkiteaerial",
-    //   text: "Instagram",
-    // },
+    //
     // {
     //   href: "https://500px.com/redkiteaerial",
     //   text: "500px",
     // },
     {
-      href: "mailto:redkiteaerial@outlook.com",
-      text: "Mail",
+      href: 'https://www.instagram.com/redkiteaerial',
+      text: 'Instagram',
     },
-  ]
+    {
+      href: 'mailto:redkiteaerial@outlook.com',
+      text: 'Mail',
+    },
+  ];
 
   const Item = ({ href, children }) => (
     <li className="underline underline-offset-2">
@@ -28,7 +28,7 @@ const Footer = () => {
       </a>
     </li>
   );
-  
+
   return (
     <footer className="relative flex flex-col px-6 py-6 text-sm border-t md:text-lg border-kite-light md:px-4">
       <ul className="flex gap-x-2">
@@ -39,10 +39,13 @@ const Footer = () => {
         ))}
       </ul>
       <div className="mt-4 text-xs max-w-prose text-kite-blue">
-        ©Red Kite Aerial - All Rights Reserved - 2023. <br/> Registered in England and Wales. Website created by <a href="http://alyssacreative.co.uk/">AS Creative</a>. Hosted by <a href="https://www.vercel.com/">Vercel</a>.
+        ©Red Kite Aerial ⌘ - All Rights Reserved - 2023. <br /> Registered in
+        England and Wales. Website created by{' '}
+        <a href="https://alyssacreative.co.uk/">AS Creative</a>. Hosted by{' '}
+        <a href="https://www.vercel.com/">Vercel</a>.
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

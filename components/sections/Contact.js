@@ -99,7 +99,7 @@ const Contact = () => {
               {`We would love to hear from you! If you have any inquiries or would like to discuss your aerial photography and video needs, please don't hesitate to reach out to us.`}
             </Text>
             <Text>
-              {`Our team at Red Kite Aerial is ready to assist you in capturing stunning imagery that will elevate your projects.`}
+              {`Our team at Red Kite Aerial ⌘ is ready to assist you in capturing stunning imagery that will elevate your projects.`}
             </Text>
             <Text>
               {`Click on our email address to get in touch or alternatively fill out the form below.`}

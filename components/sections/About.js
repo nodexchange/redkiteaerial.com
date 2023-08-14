@@ -11,7 +11,7 @@ const About = () => {
           <Marquee />
           <Image
             src={idx_me}
-            alt="A futuristic, cinematic photo of myself standing in front of blue tinted lights in the Montreal metro, wearing a red jacket"
+            alt="A photo of myself standing in front of London Townhall featuring abstract architecture."
             height="md:order-first aspect-square md:h-img"
           />
         </div>
@@ -26,7 +26,7 @@ const About = () => {
             
             Elevate Your Listings with{' '}
             <Tooltip text="Drone Photography and Video experts based in Buckinghamshire">
-              <span className="font-light text-kite">{' '}Red Kite Aerial</span>
+              <span className="font-light text-kite">{' '}Red Kite Aerial ⌘</span>
             </Tooltip>
             <br/> We are imaging Experts transforming 
             <b className="font-mtl-bold">{' '} your Real Estate, Airbnb, and Commercial listing</b> 

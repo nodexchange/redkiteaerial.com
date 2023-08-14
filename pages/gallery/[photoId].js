@@ -11,7 +11,7 @@ const Gallery = ({ selectedPhoto }) => {
     <main className="relative">
       <div className="px-4 py-4">
         <div className="relative">
-          <Link href="/gallery" passHref legacyBehavior>
+          <Link href="/gallery" passHref legacyBehavior prefetch={false}>
             <a className="rounded px-2 py-2 inline-block absolute top-4 left-4 z-10 bg-yolk text-white text-sm border-black border leading-none transition betterhover:hover:bg-yolk/75">
               Back to Our Work
             </a>

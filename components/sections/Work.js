@@ -44,7 +44,7 @@ const ImageLayout = ({ logo, src, logoAlt, alt, className }) => {
           <NextImage layout="fill" objectFit="contain" src={logo} alt={logoAlt} />
         </div>
       </div>
-      <div className="scale-[101.5%] content brightness-50 aspect-square blur-[3px]">
+      <div className="relative scale-[101.5%] content brightness-50 aspect-square blur-[3px]">
         <NextImage 
           // placeholder="blur" 
           layout="fill" 
@@ -65,8 +65,8 @@ const Work = () => {
       </div>
       <div className="grid grid-flow-col pl-6 pr-6 -mx-6 overflow-x-auto gap-x-yeat auto-cols-custom md:auto-cols-auto sm:mx-0 sm:px-0">
         <ImageLayout src={foxtons} alt="Foxtons Estate Agency" logoAlt="Foxtons" logo="/images/logos/foxtons.png" />
-        <ImageLayout src={mp}  alt="" logoAlt="Marsh & Peterson logo" logo="/images/logos/mp.png" className="brightness-0 invert" />
-        <ImageLayout src={savills} alt="" logoAlt="Savills" logo="/images/logos/savills.png"/>
+        <ImageLayout src={mp}  alt="Marsh & Peterson logo" logoAlt="Marsh & Peterson logo" logo="/images/logos/mp.png" className="brightness-0 invert" />
+        <ImageLayout src={savills} alt="Savills Logo" logoAlt="Savills" logo="/images/logos/savills.png"/>
       </div>
       <ColumnOne />
     </div>

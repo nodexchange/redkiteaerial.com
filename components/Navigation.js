@@ -57,7 +57,7 @@ const NavigationLink = ({ intent, href, onClick, children }) => {
   const isActive = router.pathname === href;
   return (
     <NavigationMenu.Item>
-      <Link href={href} passHref legacyBehavior>
+      <Link href={href} passHref legacyBehavior prefetch={false}>
         <NavigationMenu.Link
           data-active={isActive}
           onClick={onClick}
@@ -85,10 +85,17 @@ const Navigation = () => {
               href="/"
               className="font-mtl-bold text-xl"
               legacyBehavior
-              passHref>
-                <div className='cursor-pointer'>
-                  <NextImage src="/images/logos/logo.png" width={300} height={75} />
-                </div>
+              passHref
+              prefetch={false}>
+              <div className="cursor-pointer">
+                <NextImage
+                  alt="Red Kite Aerial ⌘ - official logo"
+                  src="/images/logos/logo.png"
+                  width={938}
+                  height={96}
+                  style={{ width: '313px', height: '32px', objectFit: 'contain' }}
+                />
+              </div>
               {/* <NavigationMenu.Link>Red Kite Aerial</NavigationMenu.Link> */}
             </Link>
           </NavigationMenu.Item>

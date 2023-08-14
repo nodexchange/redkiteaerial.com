@@ -47,7 +47,7 @@ const FilterTag = ({ filter, onClick, children }) => {
 
   return (
     <div className="grid">
-      <Link href={`/gallery?type=${filter}`} as={`/gallery/${filter}`} passHref legacyBehavior>
+      <Link href={`/gallery?type=${filter}`} as={`/gallery/${filter}`} passHref legacyBehavior prefetch={false}>
         <a
           className={cx(
             "border rounded px-2 py-0.5 border-dark text-sm content text-dark z-10"
@@ -187,6 +187,7 @@ const Gallery = ({ images }) => {
             ({ id, public_id, format, width, height, blurDataUrl }) => (
               <AnimatePresence key={id}>
                 <Link
+                  prefetch={false}
                   href={`/gallery/?photoId=${id}`}
                   as={`/gallery/${id}`}
                 >

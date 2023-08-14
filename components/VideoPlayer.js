@@ -10,8 +10,10 @@ const VidPlayer = React.memo(({ videoRef }) => {
         publicId="redkiteaerial/radnage-hd2_-_HD_1080p_buzjck"
         width="100%"
         controls
-        autoplay
+        autoPlay
         muted
+        alt="Red Kite Aerial ⌘ - Radnage, Buckinghamshire, UK - Sample Video showing a property from above."
+        poster="https://res.cloudinary.com/dr4ou2ggt/video/upload/v1/redkiteaerial/radnage-hd2_-_HD_1080p_buzjck.jpg"
         innerRef={videoRef}
       />
     </CloudinaryContext>

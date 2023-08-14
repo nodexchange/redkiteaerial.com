@@ -24,7 +24,7 @@ const gear_data = {
         "Aerial: Our Premium Package combines breathtaking bird's-eye aerial photography and captivating video to showcase your real estate property's exterior like never before. Highlighting every detail, our expert team ensures a visually stunning experience that attracts discerning buyers or renters. Contact us now!.",
       href: "https://redkiteaerial.co.uk/gallery",
       image: ListingAirBnb,
-      imageAlt: "Example of Video Footage",
+      imageAlt: "A drone photo of a country house surrounded by countryside and green open fields",
       tags: ["Aerial", "Premium", "Photo", "Video"],
     },
   ],
@@ -39,7 +39,7 @@ const gear_data = {
         "Elevate: Our Complete Package offers an all-encompassing experience, capturing the essence of your real estate property from both the exterior and interior. With breathtaking bird's-eye aerial photography and captivating video, we showcase every architectural detail and showcase the exquisite design of your property.",
       href: "https://amzn.to/3DWAqGU",
       image: ListingLake,
-      imageAlt: "",
+      imageAlt: "A over head drone photo of a lake and a house",
       tags: ["Sony", "Full-Frame", "Mirrorless", "Interchangeable-Lens"],
     },
     {
@@ -52,7 +52,7 @@ const gear_data = {
         "Essence: Our Signature Photo Package delivers exceptional real estate photography. Meticulously composed shots highlight unique features. Stand out with vibrant, custom-branded, aerial images.",
       href: "https://amzn.to/3r7OV35",
       image: ListingCastle,
-      imageAlt: "",
+      imageAlt: "An aerial shot of a 17 century castle surrounded by green fields, private garden and lush trees",
       tags: ["Sony", "Full-Frame", "Mirrorless", "Interchangeable-Lens"],
       scale: "sm:scale-[1.7]",
     },
@@ -66,7 +66,7 @@ const gear_data = {
         "Sky View: Our comprehensive Drone Surveying Package offers high-precision video footage collected from the skies. With the 4k High Definition video, you will be able to identify every detail.",
       href: "https://amzn.to/3E3h5nw",
       image: ListingSunset,
-      imageAlt: "",
+      imageAlt: "An aerial shot of a sunset over a lake and a house",
       tags: ["Sony", "Full-Frame", "Mirrorless", "Interchangeable-Lens"],
     },
   ],
@@ -170,6 +170,7 @@ const Services = () => {
             <div className="mb-2 overflow-hidden bg-white border rounded h-[48rem] border-kite-light">
               <NextImage
                 src={ListingAerial}
+                alt="Aerial view of a manor house located in Buckinghamshire, England."
                 className="rounded"
                 style={{ objectFit: "cover", height: "100%" }}
               />
@@ -177,6 +178,7 @@ const Services = () => {
             <span className="inline-block w-full p-1 text-sm text-center border rounded text-kite-blue">
               Photo taken on {" "}
               <Link
+                prefetch={false}
                 isExternal
                 href="https://www.dji.com/uk/mini-3-pro?site=brandsite&from=landing_page"
                 className="underline transition duration-200 cursor-pointer underline-offset-2 hover:bg-yolk/50 hover:text-white"

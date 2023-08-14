@@ -19,15 +19,15 @@ const Section = ({ className, children }) => {
 export default function Home() {
   return (
     <>
-      <WebPageJsonLd name="Red Kite Aerial" url="https://www.redkiteaerial.co.uk" />
+      <WebPageJsonLd name="Red Kite Aerial ⌘" url="https://www.redkiteaerial.co.uk" />
       <SocialProfileJsonLd
         type="Person"
-        name="Red Kite Aerial"
-        url="http://www.redkiteaerial.co.uk"
+        name="Red Kite Aerial ⌘"
+        url="https://www.redkiteaerial.co.uk"
         sameAs={[
-          // "http://www.facebook.com/redkiteaerial",
-          // "http://instagram.com/redkiteaerial",
-          "http://www.twitter.com/redkiteaerial",
+          // "https://www.facebook.com/redkiteaerial",
+          "https://instagram.com/redkiteaerial",
+          "https://www.twitter.com/redkiteaerial",
         ]}
       />
       <Script src="/getHeight.js"></Script>

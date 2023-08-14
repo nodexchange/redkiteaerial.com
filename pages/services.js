@@ -10,7 +10,7 @@ const AboutText = () => (
     <div className="flex flex-col gap-4 max-w-prose">
       <div>
         <h2 className="py-1 text-2xl sm:text-4xl font-mtl-bold">
-          Welcome to Red Kite Aerial
+          Welcome to Red Kite Aerial ⌘
         </h2>
         <p className="text-2xl sm:text-4xl">
           {`Premier drone and aerial photography and video services, specialising in capturing stunning imagery for the real estate and Airbnb listings.`}
