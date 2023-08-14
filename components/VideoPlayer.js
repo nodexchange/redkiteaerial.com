@@ -5,7 +5,7 @@ import { FilmStrip } from "phosphor-react";
 
 const VidPlayer = React.memo(({ videoRef }) => {
   return (
-    <CloudinaryContext cloud_name={`${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}`}>
+    <CloudinaryContext cloud_name={`${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}`} secure>
       <Video
         publicId="redkiteaerial/radnage-hd2_-_HD_1080p_buzjck"
         width="100%"
