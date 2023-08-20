@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useForm, ValidationError } from "@formspree/react";
+import { useForm } from "@formspree/react";
 import { Text, Button, Heading } from "@components";
 // import useCopyToClipboard from "@/hooks/useCopyToClipboard";
 import { ArrowRight } from "phosphor-react";

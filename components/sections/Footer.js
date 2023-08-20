@@ -1,4 +1,5 @@
 import splitbee from '@splitbee/web';
+import NextImage from 'next/image';
 
 const Footer = () => {
   const footerLinks = [
@@ -37,6 +38,20 @@ const Footer = () => {
             {link.text}
           </Item>
         ))}
+        <li className="underline underline-offset-2">
+        <a
+              aria-label="Chat on WhatsApp"
+              target="_blank"
+              href="https://wa.me/447500905701"
+              title="Chat on WhatsApp"
+              className="flex text-sm text-gray-800 transition-all duration-200 hover:text-opacity-70 focus:text-blue-600">
+              <NextImage
+                alt="Chat on WhatsApp"
+                src="/WhatsAppButtonGreenSmall.png"
+                width="120"
+                height="28"></NextImage>{' '}
+            </a>
+            </li>
       </ul>
       <div className="mt-4 text-xs max-w-prose text-kite-blue">
         ©Red Kite Aerial ⌘ - All Rights Reserved - 2023. <br /> Registered in

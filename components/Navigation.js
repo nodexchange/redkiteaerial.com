@@ -93,7 +93,11 @@ const Navigation = () => {
                   src="/images/logos/logo.png"
                   width={938}
                   height={96}
-                  style={{ width: '313px', height: '32px', objectFit: 'contain' }}
+                  style={{
+                    width: '313px',
+                    height: '32px',
+                    objectFit: 'contain',
+                  }}
                 />
               </div>
               {/* <NavigationMenu.Link>Red Kite Aerial</NavigationMenu.Link> */}
@@ -112,6 +116,20 @@ const Navigation = () => {
               onClick={() => setOpen(true)}>
               Contact
             </NavigationMenu.Trigger>
+          </NavigationMenu.Item>
+          <NavigationMenu.Item>
+            <a
+              aria-label="Chat on WhatsApp"
+              target="_blank"
+              href="https://wa.me/447500905701"
+              title="Chat on WhatsApp"
+              className="flex text-sm text-gray-800 transition-all duration-200 hover:text-opacity-70 focus:text-blue-600">
+              <NextImage
+                alt="Chat on WhatsApp"
+                src="/WhatsAppButtonGreenSmall.png"
+                width="140"
+                height="32"></NextImage>{' '}
+            </a>
           </NavigationMenu.Item>
           <NavigationMenu.Item className="list-none">
             <NavigationMenu.Trigger className="sm:hidden" asChild>
