@@ -19,11 +19,11 @@ const Section = ({ className, children }) => {
 export default function Home() {
   return (
     <>
-      <WebPageJsonLd name="Red Kite Aerial ⌘" url="https://www.redkiteaerial.co.uk" />
+      <WebPageJsonLd name="Red Kite Aerial ⌘" url="https://redkiteaerial.co.uk" />
       <SocialProfileJsonLd
         type="Person"
         name="Red Kite Aerial ⌘"
-        url="https://www.redkiteaerial.co.uk"
+        url="https://redkiteaerial.co.uk"
         sameAs={[
           // "https://www.facebook.com/redkiteaerial",
           "https://instagram.com/redkiteaerial",

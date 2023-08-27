@@ -2,18 +2,18 @@ function generateSiteMap(articles) {
   return `<?xml version="1.0" encoding="UTF-8"?>
    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
      <url>
-       <loc>https://www.redkiteaerial.co.uk</loc>
+       <loc>https://redkiteaerial.co.uk</loc>
        <changefreq>monthly</changefreq>
       <priority>1.0</priority>
      </url>
      <url>
-       <loc>https://www.redkiteaerial.co.uk/pricing</loc>
+       <loc>https://redkiteaerial.co.uk/pricing</loc>
      </url>
      <url>
-       <loc>https://www.redkiteaerial.co.uk/services</loc>
+       <loc>https://redkiteaerial.co.uk/services</loc>
      </url>
      <url>
-       <loc>https://www.redkiteaerial.co.uk/gallery</loc>
+       <loc>https://redkiteaerial.co.uk/gallery</loc>
      </url>
    </urlset>
  `;
