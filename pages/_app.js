@@ -20,7 +20,7 @@ const MyApp = ({ Component, pageProps }) => {
             titleTemplate="%s | Red Kite Aerial ⌘"
             defaultTitle="Red Kite Aerial ⌘ | Drone Photography and Video Service"
             description="Elevate Your Real Estate and Airbnb Listings! Premium services for breathtaking bird's-eye Aerial Photography and captivating Video services based in Radnage, Buckinghamshire, UK."
-            canonical="https://redkiteaerial.co.uk"
+            canonical="https://www.redkiteaerial.co.uk"
             twitter={{
               handle: "@redkiteaerial",
               site: "@redkiteaerial",
@@ -29,12 +29,12 @@ const MyApp = ({ Component, pageProps }) => {
             openGraph={{
               type: "website",
               locale: "en_CA",
-              url: "https://redkiteaerial.co.uk",
+              url: "https://www.redkiteaerial.co.uk",
               title: "Red Kite Aerial ⌘ | Drone Photography and Video Service",
               description: "Elevate Your  Real Estate and Airbnb Listings! Premium services for breathtaking bird's-eye Aerial Photography and captivating Video services based in Radnage, Buckinghamshire, UK.",
               images: [
                 {
-                  url: "https://redkiteaerial.co.uk/images/og.png",
+                  url: "https://www.redkiteaerial.co.uk/images/og.png",
                   width: 1200,
                   height: 630,
                   alt: "Red Kite Aerial ⌘ | Drone Photography and Video Service",

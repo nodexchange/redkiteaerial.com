@@ -49,7 +49,7 @@ export default function Services() {
 
   return (
     <>
-      <NextSeo title="Services" canonical="https://redkiteaerial.co.uk/services" />
+      <NextSeo title="Services" canonical="https://www.redkiteaerial.co.uk/services" />
       <ContactDialog open={open} onOpenChange={setOpen} />
       <main className="relative pb-20">
         <div className="flex items-center px-6 py-6 md:px-4 gap-x-yeat">

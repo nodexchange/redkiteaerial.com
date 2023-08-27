@@ -22,7 +22,7 @@ const gear_data = {
       shortDesc: "1 hour of shooting, 1 hour of editing",
       description:
         "Aerial: Our Premium Package combines breathtaking bird's-eye aerial photography and captivating video to showcase your real estate property's exterior like never before. Highlighting every detail, our expert team ensures a visually stunning experience that attracts discerning buyers or renters. Contact us now!.",
-      href: "https://redkiteaerial.co.uk/gallery",
+      href: "https://www.redkiteaerial.co.uk/gallery",
       image: ListingAirBnb,
       imageAlt: "A drone photo of a country house surrounded by countryside and green open fields",
       tags: ["Aerial", "Premium", "Photo", "Video"],
@@ -148,7 +148,7 @@ const GearItemSmall = ({ image, href, imageAlt, scale, shortDesc, price, title }
 const Services = () => {
   return (
     <>
-      <NextSeo title="Pricing" canonical="https://redkiteaerial.co.uk/pricing" />
+      <NextSeo title="Pricing" canonical="https://www.redkiteaerial.co.uk/pricing" />
       <main className="relative h-full pb-20">
         <div className="items-center justify-between md:flex">
           <div className="flex items-center px-6 py-6 md:px-4 gap-x-yeat">

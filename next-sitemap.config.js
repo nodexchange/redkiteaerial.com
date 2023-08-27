@@ -1,5 +1,5 @@
 const sitemapConfig = { 
-    siteUrl: 'https://redkiteaerial.co.uk',
+    siteUrl: 'https://www.redkiteaerial.co.uk',
     generateRobotsTxt: true,
     generateIndexSitemap: false,
     exclude: ['/gallery/*'],

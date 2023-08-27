@@ -116,7 +116,7 @@ const Gallery = ({ images }) => {
 
   return (
     <>
-      <NextSeo title="Our Work" canonical="https://redkiteaerial.co.uk/gallery" />
+      <NextSeo title="Our Work" canonical="https://www.redkiteaerial.co.uk/gallery" />
       <main className="relative">
         <Dialog open={open} onOpenChange={setOpen}>
           {photoId && (
