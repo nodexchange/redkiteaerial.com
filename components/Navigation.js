@@ -89,7 +89,7 @@ const Navigation = () => {
               prefetch={false}>
               <div className="cursor-pointer">
                 <NextImage
-                  alt="Red Kite Aerial ⌘ - official logo"
+                  alt="Red Kite Aerial ⌘ - Official Logo showing a drone flying over a house"
                   src="/images/logos/logo.png"
                   width={938}
                   height={96}

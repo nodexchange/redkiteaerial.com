@@ -31,7 +31,7 @@ const MyApp = ({ Component, pageProps }) => {
               locale: "en_CA",
               url: "https://www.redkiteaerial.co.uk",
               title: "Red Kite Aerial ⌘ | Drone Photography and Video Service",
-              description: "Elevate Your  Real Estate and Airbnb Listings! Premium services for breathtaking bird's-eye Aerial Photography and captivating Video services based in Radnage, Buckinghamshire, UK.",
+              description: "Elevate Your Real Estate and Airbnb Listings! Premium services for breathtaking bird's-eye Aerial Photography and captivating Video services based in Radnage, Buckinghamshire, UK.",
               images: [
                 {
                   url: "https://www.redkiteaerial.co.uk/images/og.png",

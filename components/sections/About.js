@@ -28,7 +28,7 @@ const About = () => {
             <Tooltip text="Drone Photography and Video experts based in Buckinghamshire">
               <span className="font-light text-kite">{' '}Red Kite Aerial ⌘</span>
             </Tooltip>
-            <br/> We are imaging Experts transforming 
+            <br/> We are imaging Experts transforming
             <b className="font-mtl-bold">{' '} your Real Estate, Airbnb, and Commercial listing</b> 
             {' '} with {' '}
             <b className="font-mtl-bold">Breathtaking bird&apos;s-eye</b> Photography and Video Services through every

@@ -14,7 +14,7 @@ const gear_data = {
   premium: [
     {
       heading: "Our most popular service",
-      title: "Premium Photo and Video Package (exteriors)",
+      title: "Premium Photo and Video Package (exteriors only)",
       longTitle:
         "Photo and Video Package - 1 hour of shooting, 1 hour of editing",
       subtitle: "",
@@ -44,7 +44,7 @@ const gear_data = {
     },
     {
       heading: "Photo only",
-      title: "Aerial Photo Package (exteriors)",
+      title: "Aerial Photo Package (exteriors only)",
       longTitle: "Canon EF 16-35mm f/4L IS USM Lens",
       subtitle: "Versatile, sharp and fast. What more can you ask for?",
       price: "£299",
@@ -73,6 +73,7 @@ const gear_data = {
 };
 
 const GearItem = ({
+  key,
   heading,
   image,
   title,
@@ -83,7 +84,7 @@ const GearItem = ({
   imageAlt,
 }) => {
   return (
-    <div className="grid py-6 md:grid-cols-2 gap-x-12">
+    <div key={key} className="grid py-6 md:grid-cols-2 gap-x-12">
       <span className="text-xs uppercase col-span-full text-kite">
         {heading}
       </span>
@@ -119,9 +120,9 @@ const GearItem = ({
   );
 };
 
-const GearItemSmall = ({ image, href, imageAlt, scale, shortDesc, price, title }) => {
+const GearItemSmall = ({ key, image, href, imageAlt, scale, shortDesc, price, title }) => {
   return (
-    <a href={href} className="flex flex-col group">
+    <a key={key} href={href} className="flex flex-col group">
       <div className="grid transition-all duration-300 bg-white border rounded aspect-square border-kite-light place-content-center group-hover:shadow group-hover:shadow-kite group-hover:border-kite">
         <div className="transition duration-300 w-fit group-hover:scale-95">
           <NextImage
@@ -178,7 +179,6 @@ const Services = () => {
             <span className="inline-block w-full p-1 text-sm text-center border rounded text-kite-blue">
               Photo taken on {" "}
               <Link
-                prefetch={false}
                 isExternal
                 href="https://www.dji.com/uk/mini-3-pro?site=brandsite&from=landing_page"
                 className="underline transition duration-200 cursor-pointer underline-offset-2 hover:bg-yolk/50 hover:text-white"

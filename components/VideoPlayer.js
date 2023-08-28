@@ -12,7 +12,7 @@ const VidPlayer = React.memo(({ videoRef }) => {
         controls
         autoPlay
         muted
-        alt="Red Kite Aerial ⌘ - Radnage, Buckinghamshire, UK - Sample Video showing a property from above."
+        alt="Elevate Video package shot on DJI Mini 3 Pro, highlighting the key features of a Real Estate located in Radnage, Buckinghamshire. Author Red Kite Aerial ⌘ 2023."
         poster="https://res.cloudinary.com/dr4ou2ggt/video/upload/v1/redkiteaerial/radnage-hd2_-_HD_1080p_buzjck.jpg"
         innerRef={videoRef}
       />

@@ -39,7 +39,7 @@ const Hero = () => {
             priority
             placeholder='blur'
             blurDataURL='/images/hero-blur.jpg'
-            alt="A sunset aerial drone shot for Radnage village located in Buckinghamshire."
+            alt="A sunset DJI Mini 3 Pro aerial drone shot commissioned as our Essence photo package for a Real Estate property located in Radnage, Buckinghamshire."
             quality={5}
           />
         </motion.div>

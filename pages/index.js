@@ -12,8 +12,8 @@ import VideoPlayer from "@/components/VideoPlayer";
 import Script from "next/script";
 import { SocialProfileJsonLd, WebPageJsonLd } from "next-seo";
 
-const Section = ({ className, children }) => {
-  return <section className={`px-6 md:px-4 ${className}`}>{children}</section>;
+const Section = ({ section, className, children }) => {
+  return <section id={section} className={`px-6 md:px-4 ${className}`}>{children}</section>;
 };
 
 export default function Home() {
@@ -33,25 +33,25 @@ export default function Home() {
       <Script src="/getHeight.js"></Script>
       <main className="relative">
         <Hero />
-        <Section>
+        <Section section="about">
           <About />
         </Section>
         <Break />
-        <Section>
+        <Section section="video-reel">
           <VideoPlayer />
         </Section>
-        <section className="h-auto px-6 md:px-4">
+        <Section section="photo-grid" className="h-auto px-6 md:px-4">
           <PhotoGrid />
-        </section>
+        </Section>
         <Break />
-        <Section>
+        <Section section="our-work">
           <Work />
         </Section>
         <CallToAction />
         <Break />
-        <section className="min-h-full h-[85vh] overflow-scroll">
+        <Section section="contact" className="min-h-full h-[85vh] overflow-scroll">
           <Contact />
-        </section>
+        </Section>
         <Footer />
       </main>
     </>
