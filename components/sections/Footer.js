@@ -1,4 +1,4 @@
-import splitbee from '@splitbee/web';
+import { InstagramLogo, Envelope } from "phosphor-react";
 import NextImage from 'next/image';
 
 const Footer = () => {
@@ -15,16 +15,19 @@ const Footer = () => {
     {
       href: 'https://www.instagram.com/redkiteaerial',
       text: 'Instagram',
+      icon: (<InstagramLogo size={20} />)
     },
     {
       href: 'mailto:redkiteaerial@outlook.com',
       text: 'Mail',
+      icon: (<Envelope size={20} />)
     },
   ];
 
-  const Item = ({ href, children }) => (
+  const Item = ({ href, icon, children }) => (
     <li className="underline underline-offset-2">
-      <a href={href} target="_blank" rel="noreferrer noopener">
+      <a className="flex gap-x-[2px]" href={href} target="_blank" rel="noreferrer noopener">
+        {icon}
         {children}
       </a>
     </li>
@@ -34,7 +37,7 @@ const Footer = () => {
     <footer className="relative flex flex-col px-6 py-6 text-sm border-t md:text-lg border-kite-light md:px-4">
       <ul className="flex gap-x-2">
         {footerLinks.map((link, index) => (
-          <Item key={index} href={link.href}>
+          <Item key={index} href={link.href} icon={link.icon}>
             {link.text}
           </Item>
         ))}
