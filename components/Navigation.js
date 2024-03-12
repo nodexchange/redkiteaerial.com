@@ -17,6 +17,7 @@ const navLinks = [
   { id: 3, title: 'Pricing', href: '/pricing' },
   { id: 4, title: 'Our Work', href: '/gallery' },
   { id: 4, title: 'Areas We Cover', href: '/areas-we-cover' },
+  { id: 5, title: 'Blog', href: '/blog' },
 ];
 
 const navigationLink = cva(['cursor-pointer'], {

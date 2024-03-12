@@ -14,7 +14,7 @@ const ServicesText = () => (
           {`At Red Kite Aerial ⌘, the sky isn't the limit—it's our workspace!`}
         </h2>
         <p className="text-xl sm:text-l">
-          {`Operating from the heart of Radnage, Buckinghamshire, we’re proud to offer our premium drone photography and video services across an expansive region, capturing breathtaking aerial views that tell a unique story every time.`}
+          {`Operating from the heart of Radnage, Buckinghamshire, we’re proud to offer our premium Real Estate and Aerial photography as well as video services across an expansive region, capturing breathtaking interior and aerial views that tell a unique story every time.`}
         </p>
       </div>
       <h3 className="font-mtl-bold underline text-lg sm:text-xl">

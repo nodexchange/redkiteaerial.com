@@ -1,0 +1,31 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "First Article",
+      "headline": "Welcome to Red Kite Aerial ⌘",
+      "subheader": "Premier Real Estate, aerial photography and video services, specialising in capturing stunning imagery for the properties and airbnb listings.",
+      "content": "This is the content of the first article.",
+      "imageUrl": "/images/city-townhall.jpg",
+      "url": "/blog/article-1"
+    },
+    {
+      "id": 2,
+      "title": "Second Article",
+      "headline": "Welcome to Red Kite Aerial ⌘",
+      "subheader": "Article 2 - Premier Real Estate, aerial photography and video services, specialising",
+      "content": "This is the content of the second article.",
+      "imageUrl": "/images/city-townhall.jpg",
+      "url": "/blog/article-2"
+    },
+    {
+      "id": 3,
+      "title": "Third Article",
+      "headline": "Welcome to Red Kite Aerial ⌘",
+      "subheader": "Article 3 Premier Real Estate, aerial photography and video services, specialising i",
+      "content": "This is the content of the third article.",
+      "imageUrl": "/images/city-townhall.jpg",
+      "url": "/blog/article-3"
+    }
+  ]
+}

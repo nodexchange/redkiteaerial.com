@@ -13,14 +13,14 @@ const AboutText = () => (
           Welcome to Red Kite Aerial ⌘
         </h2>
         <p className="text-2xl sm:text-4xl">
-          {`Premier drone and aerial photography and video services, specialising in capturing stunning imagery for the real estate and Airbnb listings.`}
+          {`Premier Real Estate, aerial photography and video services, specialising in capturing stunning imagery for the properties and airbnb listings.`}
         </p>
       </div>
       <p className="text-lg sm:text-xl">
         With our cutting-edge technology and skilled team of professionals, we are here to elevate your listings and showcase your properties in the most captivating way possible. Here are a few reasons to choose Red Kite Aerial:
       </p>
       <p className="text-lg sm:text-xl">
-        <span className="font-mtl-bold underline">Real Estate Expertise:</span> Our team understands the unique requirements of the real estate industry in Buckinghamshire and surrounding areas. We know that capturing the essence of a property is crucial for attracting potential buyers or renters. With our aerial photography and video services, we can highlight the key features, showcase the property&apos;s location, and create a compelling visual narrative that will engage prospective clients.
+        <span className="font-mtl-bold underline">Real Estate Expertise:</span> Our team understands the unique requirements of the real estate industry in Buckinghamshire and surrounding areas. We know that capturing the essence of a property is crucial for attracting potential buyers or renters. With our premier interior, aerial photography and video services, we can highlight the key features, showcase the property&apos;s location, and create a compelling visual narrative that will engage prospective clients.
       </p>
       <p className="text-lg sm:text-xl">
         <span className="font-mtl-bold underline">Airbnb Listing Enhancement:</span> In the competitive world of short-term rentals, standing out is essential. Our aerial imagery can give your Airbnb listings the edge they need to capture attention and increase bookings. Whether it is showcasing the property&apos;s exterior, highlighting nearby attractions, or providing a breathtaking bird&apos;s-eye view, our visuals will help your listings shine and leave a lasting impression on potential guests.
