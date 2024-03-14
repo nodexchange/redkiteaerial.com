@@ -18,7 +18,7 @@ const MyApp = ({ Component, pageProps }) => {
           <DefaultSeo
             title={undefined}
             titleTemplate="%s | Red Kite Aerial"
-            defaultTitle="Red Kite Aerial | Real Estate and Aerial Photography and Video Service"
+            defaultTitle="Red Kite Aerial | Real Estate, Aerial Photography and Video Service"
             description="Elevate Your Real Estate and Airbnb Listings! Premium services for breathtaking bird's-eye Aerial Photography and captivating Video services based in Radnage, Buckinghamshire, UK."
             canonical="https://www.redkiteaerial.co.uk"
             twitter={{
