@@ -15,6 +15,12 @@ function generateSiteMap(articles) {
      <url>
        <loc>https://www.redkiteaerial.co.uk/gallery</loc>
      </url>
+     <url>
+       <loc>https://www.redkiteaerial.co.uk/areas-we-cover</loc>
+     </url>
+     <url>
+       <loc>https://www.redkiteaerial.co.uk/blog</loc>
+     </url>
    </urlset>
  `;
 }

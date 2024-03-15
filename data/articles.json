@@ -1,40 +1,59 @@
 {
   "articles": [
     {
-      "id": 1,
+      "id": 0,
       "title": "Elevating Property Listings with Drone Photography",
       "headline": "Take Your Listings to New Heights",
       "subheader": "Discover how drone photography can revolutionise the way you present properties in Buckinghamshire.",
       "content": "In the competitive real estate market of Buckinghamshire, UK, standing out is paramount. Drone photography offers a unique aerial perspective, enabling estate agents to showcase properties in their entirety, including expansive gardens and captivating surrounding areas. It's not merely about capturing images; it's about weaving a compelling narrative around the property, highlighting its features and potential in a way that ground-level photography cannot. By incorporating drone photography, estate agents can elevate their listings, offering potential buyers a breathtaking aerial viewpoint that captivates and entices. Embrace this innovative technology to differentiate your offerings, attract more interest, and ultimately, sell properties more swiftly.",
       "imageUrl": "/blog/bebop2-real-estate.webp",
+      "views": "14",
+      "shared": "1",
       "url": "/blog/drone-photography-benefits"
     },
     {
-      "id": 2,
+      "id": 1,
       "title": "Why Buckinghamshire Estate Agents Need Drone Imagery",
       "headline": "Sky-High Marketing for Your Listings",
       "subheader": "Enhance your property presentations with high-quality drone images and videos.",
       "content": "Drone imagery has transitioned from a luxury to a necessity for estate agents in Buckinghamshire. By providing a bird's-eye view, it offers an unparalleled perspective of properties, highlighting features that are invisible or less impressive from the ground. This technology not only enhances the visual appeal of a listing but also provides potential buyers with a comprehensive understanding of the property's layout, size, and the harmony of its surroundings. Integrating drone imagery into your marketing strategy can significantly increase the attractiveness of your listings, encouraging more viewings and potentially accelerating the sales process. It's a strategic investment that elevates your brand in the marketplace.",
       "imageUrl": "/blog/drone-city.avif",
+      "views": "19",
+      "shared": "3",
       "url": "/blog/drone-imagery-need"
     },
     {
-      "id": 3,
+      "id": 2,
       "title": "Maximising Your Listings with Aerial Photography",
       "headline": "A Picture is Worth a Thousand Views",
       "subheader": "Unlock the full potential of your property listings with strategic aerial photography.",
       "content": "Aerial photography is a critical tool in the digital era, where first impressions on online platforms can make or break a property's marketability. By leveraging drone technology, estate agents in Buckinghamshire can produce striking, high-resolution images that capture the beauty and uniqueness of each property from a compelling vantage point. These visuals not only differentiate listings in a crowded market but also spark the imagination of potential buyers, offering them a vivid glimpse into their future home and lifestyle. Strategic aerial photography elevates the perceived value of properties, enhancing their appeal and drawing in a wider audience of potential buyers. It's an invaluable asset for agents aiming to maximise the impact of their listings.",
       "imageUrl": "/blog/mini.webp",
+      "views": "2",
+      "shared": "0",
       "url": "/blog/maximising-listings-aerial"
     },
     {
-      "id": 4,
+      "id": 3,
       "title": "The Future of Real Estate Showcasing in Buckinghamshire",
       "headline": "Beyond the Horizon: Drone Technology",
       "subheader": "Embrace the future of real estate showcasing with cutting-edge drone photography.",
       "content": "As we venture into the future of real estate marketing in Buckinghamshire, drone photography emerges as a key player, transforming how properties are presented and sold. This technology offers more than just stunning visuals; it provides a dynamic and immersive viewing experience that ground-based photography simply cannot match. With the ability to capture expansive panoramic views and intricate details from above, drone photography allows estate agents to present a comprehensive view of properties, their architecture, and their surroundings. This not only enhances the attractiveness of listings but also engages potential buyers on a deeper level, allowing them to envision their lives within these spaces. As drone technology continues to advance, its integration into real estate marketing represents a forward-thinking approach that can elevate estate agents above their competitors, offering unparalleled perspectives and a compelling narrative for every property.",
       "imageUrl": "/blog/drone.webp",
+      "views": "33",
+      "shared": "0",
       "url": "/blog/future-real-estate-drone"
+    },
+    {
+      "id": 4,
+      "title": "Harnessing Video Storytelling to Transform Real Estate Listings",
+      "headline": "Bringing Properties to Life with Video Walkthroughs",
+      "subheader": "Learn how video storytelling and walkthroughs can significantly enhance listing engagement and sales in Buckinghamshire.",
+      "content": "In the competitive landscape of Buckinghamshire's real estate market, video storytelling and walkthroughs stand out as powerful tools to captivate potential buyers. Unlike traditional photographs, videos offer a dynamic and immersive experience, guiding viewers through every room and feature of a property as if they were there in person. This not only boosts listing engagement by providing a realistic feel of the property but also helps in accelerating sales by appealing to the emotions of buyers, enabling them to envision their future in the home. Video walkthroughs complemented by engaging narratives can dramatically increase the popularity of listings, encouraging quicker decisions at or above the asked price. By integrating video storytelling into their marketing strategy, estate agents in Buckinghamshire can not only enhance their listings' appeal but also gain a competitive edge in the market.",
+      "imageUrl": "/blog/walkthrough.png",
+      "views": "17",
+      "shared": "1",
+      "url": "/blog/video-storytelling-real-estate"
     }
   ]
 }

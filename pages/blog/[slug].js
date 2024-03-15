@@ -61,7 +61,7 @@ export default function BlogArticle({ article }) {
         <div className="grid px-6 gap-x-12 gap-y-4 md:px-4 md:grid-cols-2">
           <Image
             src={content.imageUrl}
-            alt="Photo of myself"
+            alt={content.url}
             priority
           />
           <section className="flex flex-col gap-y-4">

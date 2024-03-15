@@ -6,7 +6,7 @@ export const BackButton = () => {
   const router = useRouter();
 
   return (
-    <button className="inline-flex" onClick={() => router.back()}>
+    <button className="inline-flex hover:text-indigo-800" onClick={() => router.back()}>
       <ArrowLeft size={24} />
       <p className='pt-0'>BACK</p>
     </button>
